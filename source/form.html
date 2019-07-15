@@ -28,8 +28,98 @@
 
     <main class="site-main">
       <h2 class="site-main__title">Подбор программы</h2>
-
+      <form class="form">
+        <h3 class="form__title">Заполните анкету и мы подберем программу питания для вашего кота</h3>
+        <div class="form__box">
+          <fieldset class="form__group form__group--required">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" placeholder="Барсик">
+          </fieldset>
+          <fieldset class="form__group form__group--required">
+            <label for="weight">Вес (кг):</label>
+            <input type="text" id="weight" placeholder="7">
+          </fieldset>
+          <fieldset class="form__group">
+            <label for="age">Возраст (лет):</label>
+            <input type="number" id="age" placeholder="7">
+          </fieldset>
+        </div>
+        <div class="form__box">
+          <div class="radio">
+            <label>
+              <input type="radio" name="program" value="slim" checked>
+              <span class="radio__label">Похудение</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="program" value="mass">
+              <span class="radio__label">Набор массы</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="program" value="advice">
+              <span class="radio__label">Не знаю (нужен ваш совет)</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__box">
+          <h3 class="subtitle">Контактные данные<br>
+          (владельца кота)</h3>
+          <fieldset class="form__group form__group--mail form__group--required">
+            <label for="mail">E-mail:</label>
+            <input type="mail" id="mail" placeholder="kuklachev@gmail.com">
+          </fieldset>
+          <fieldset class="form__group form__group--phone form__group--required">
+            <label for="phone">Телефон:</label>
+            <input type="text" id="phone" placeholder="8 (960) 900-60-90">
+          </fieldset>
+          <h3 class="subtitle">Комментарий</h3>
+          <fieldset class="form__group">
+            <label for="comments" class="visually-hidden">Расскажите обо всех повадках кота</label>
+            <textarea rows="6" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <h3 class="subtitle">Дополнительно</h3>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" checked>
+              <span class="checkbox__label">Сахарозаменитель</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              <span class="checkbox__label">Питьевая вода</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              <span class="checkbox__label">Молоко</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              <span class="checkbox__label">Витамины</span>
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="button">Отправить заявку</button>
+        <div class="form__hint">* &mdash; Обязательные поля</div>
+      </form>
     </main>
+
+    <div class="contacts">
+      <div class="contacts__address dealers">
+        <h3 class="dealers__title">приглашаем к сотрудничеству дилеров!</h3>
+        <address class="dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <div class="contacts__map">
+
+      </div>
+    </div>
 
     <footer class="site-footer">
       <div class="site-footer__logobox">
