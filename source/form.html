@@ -28,20 +28,20 @@
 
     <main class="site-main">
       <h2 class="site-main__title">Подбор программы</h2>
-      <form class="form">
+      <form class="form" action="https://echo.htmlacademy.ru">
         <h3 class="form__title">Заполните анкету и мы подберем программу питания для вашего кота</h3>
         <div class="form__box">
           <fieldset class="form__group form__group--required">
             <label for="name">Имя:</label>
-            <input type="text" id="name" placeholder="Барсик">
+            <input type="text" id="name" name="name" placeholder="Барсик">
           </fieldset>
           <fieldset class="form__group form__group--required">
             <label for="weight">Вес (кг):</label>
-            <input type="text" id="weight" placeholder="7">
+            <input type="text" id="weight" name="weight" placeholder="7">
           </fieldset>
           <fieldset class="form__group">
             <label for="age">Возраст (лет):</label>
-            <input type="number" id="age" placeholder="7">
+            <input type="number" id="age" name="age" placeholder="7">
           </fieldset>
         </div>
         <div class="form__box">
@@ -69,39 +69,39 @@
           (владельца кота)</h3>
           <fieldset class="form__group form__group--mail form__group--required">
             <label for="mail">E-mail:</label>
-            <input type="email" id="mail" placeholder="kuklachev@gmail.com">
+            <input type="email" id="mail" name="mail" placeholder="kuklachev@gmail.com">
           </fieldset>
           <fieldset class="form__group form__group--phone form__group--required">
             <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" placeholder="8 (960) 900-60-90">
+            <input type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
           </fieldset>
           <h3 class="subtitle">Комментарий</h3>
           <fieldset class="form__group">
             <label for="comments" class="visually-hidden">Расскажите обо всех повадках кота</label>
-            <textarea rows="6" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea rows="6" id="comments" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <h3 class="subtitle">Дополнительно</h3>
           <div class="checkbox">
             <label>
-              <input type="checkbox" checked>
+              <input type="checkbox" name="additional" checked>
               <span class="checkbox__label">Сахарозаменитель</span>
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox">
+              <input type="checkbox" name="additional">
               <span class="checkbox__label">Питьевая вода</span>
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox">
+              <input type="checkbox" name="additional">
               <span class="checkbox__label">Молоко</span>
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox">
+              <input type="checkbox" name="additional">
               <span class="checkbox__label">Витамины</span>
             </label>
           </div>
