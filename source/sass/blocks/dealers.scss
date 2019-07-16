@@ -2,6 +2,10 @@
   padding: 30px 20px;
   display: flex;
   align-items: center;
+
+  &--grey {
+    background-color: #f2f2f2;
+  }
 }
 
 .dealers__title {

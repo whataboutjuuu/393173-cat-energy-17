@@ -1,0 +1,31 @@
+.more-item {
+  padding: 20px;
+  text-align: center;
+}
+
+.more-item__icon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+}
+
+.more-item__text {
+
+  text-align: center;
+
+  h5 {
+    font-size: 16px;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 12px;
+    font-family: "Arial", sans-serif;
+    color: rgb(68, 68, 68);
+    line-height: 1.333;
+  }
+}

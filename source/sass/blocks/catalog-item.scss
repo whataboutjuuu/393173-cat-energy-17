@@ -1,0 +1,22 @@
+.catalog-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 20px;
+  margin-top: -1px;
+
+  border: 1px solid #ededed;
+}
+
+.catalog-item__image {
+  flex: 50% 0 0;
+  text-align: center;
+}
+
+.catalog-item__info {
+  flex: 50% 0 0;
+}
+
+.catalog-item__action {
+  flex: 100% 0 0;
+}

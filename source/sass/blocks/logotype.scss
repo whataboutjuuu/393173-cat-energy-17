@@ -1,11 +1,12 @@
-.logotype {
-
+.logotype:not(a) {
+  opacity: 1;
+  pointer-events: none;
 }
 
-.logotype__image {
-
+.logotype:hover {
+  opacity: 0.8;
 }
 
-.logotype__title {
-
+.logotype:active {
+  opacity: 0.6;
 }
