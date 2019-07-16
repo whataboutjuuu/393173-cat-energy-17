@@ -1,0 +1,36 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.socials__item {
+
+}
+
+.social-button {
+  display: block;
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+
+  color: #666666;
+
+  svg {
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover,
+  &:active {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

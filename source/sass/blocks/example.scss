@@ -1,0 +1,34 @@
+.example {
+  background-color: #f2f2f2;
+  padding: 0 20px 40px;
+}
+
+.example__title {
+  font-size: 36px;
+  color: rgb(17, 17, 17);
+  line-height: 1.667;
+  text-align: left;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.example__description {
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  color: rgb(68, 68, 68);
+  line-height: 1.286;
+  text-align: left;
+}
+
+.example__statistics {
+  padding-bottom: 10px;
+}
+
+.example__cost {
+  padding: 10px 0;
+  font-size: 14px;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+  line-height: 1.429;
+  text-align: center;
+}

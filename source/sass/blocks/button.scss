@@ -1,7 +1,27 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
-  border: 0;
-  background-color: green;
-  color: #ffffff;
+  height: 40px;
+
+  background-color: #68b738;
+
+  font-size: 20px;
+  font-family: $fontFamily;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
   text-decoration: none;
+
+  &:hover,
+  &:active {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

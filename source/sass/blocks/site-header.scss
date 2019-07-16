@@ -1,0 +1,20 @@
+.site-header {
+  display: flex;
+  align-items: center;
+
+  height: 65px;
+
+  padding: 0 50px 0 20px;
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.site-header__logobox {
+  width: 67.86%;
+}
+
+.site-header__navigation {
+  width: 64px;
+  position: absolute;
+  right: 0;
+}

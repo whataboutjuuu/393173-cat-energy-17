@@ -1,3 +1,40 @@
-@import "variables.scss";
 @import "fonts.scss";
+@import "variables.scss";
+@import "utils.scss";
+
+// Common blocks
 @import "blocks/button.scss";
+
+// Page parts
+@import "blocks/logotype.scss";
+@import "blocks/program.scss";
+@import "blocks/example.scss";
+@import "blocks/stats.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/main-screen.scss";
+@import "blocks/site-header.scss";
+@import "blocks/strategy.scss";
+@import "blocks/strategy-list.scss";
+@import "blocks/cat-slider.scss";
+@import "blocks/slider-controls.scss";
+@import "blocks/contacts.scss";
+@import "blocks/dealers.scss";
+@import "blocks/site-footer.scss";
+@import "blocks/socials.scss";
+@import "blocks/academy-logo.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $fontFamily;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
