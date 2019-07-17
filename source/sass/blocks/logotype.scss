@@ -1,0 +1,13 @@
+.logotype:not(a) {
+  opacity: 1;
+
+  pointer-events: none;
+}
+
+.logotype:hover {
+  opacity: 0.8;
+}
+
+.logotype:active {
+  opacity: 0.6;
+}

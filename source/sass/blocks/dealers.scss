@@ -1,0 +1,29 @@
+.dealers {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+
+  &--grey {
+    background-color: #f2f2f2;
+  }
+}
+
+.dealers__title {
+  width: 50%;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+}
+
+.dealers__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.429;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  color: rgb(68, 68, 68);
+}

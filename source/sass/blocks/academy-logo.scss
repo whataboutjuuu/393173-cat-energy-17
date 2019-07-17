@@ -1,0 +1,36 @@
+.academy-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  color: #444444;
+  text-decoration: none;
+}
+
+.academy-logo__image {
+  width: 27px;
+  height: 34px;
+
+  color: #666666;
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    fill: currentColor;
+  }
+}
+
+.academy-logo:hover .academy-logo__image,
+.academy-logo:active .academy-logo__image {
+  color: #68b738;
+}
+
+.academy-logo:active .academy-logo__image {
+  opacity: 0.3;
+}

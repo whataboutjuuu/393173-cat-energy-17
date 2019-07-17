@@ -1,0 +1,28 @@
+.product__title {
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  color: #111111;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product__info-table {
+  width: 100%;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  border: none;
+}
+
+.product__cell {
+  font-size: 12px;
+  line-height: 1.333;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+
+  &:last-child {
+    text-align: right;
+  }
+}

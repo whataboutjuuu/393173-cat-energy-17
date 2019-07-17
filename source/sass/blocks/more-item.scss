@@ -1,0 +1,40 @@
+.more-item {
+  padding: 20px;
+
+  text-align: center;
+}
+
+.more-item__text {
+  text-align: center;
+
+  h5 {
+    margin-bottom: 0;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.333;
+    font-family: "Arial", sans-serif;
+    color: rgb(68, 68, 68);
+  }
+
+  &::before {
+    content: "";
+
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpolygon fill='%23231F20' points='30 14 16 14 16 0 14 0 14 14 0 14 0 16 14 16 14 30 16 30 16 16 30 16 '/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+  }
+}
