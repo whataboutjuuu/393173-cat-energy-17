@@ -1,5 +1,6 @@
 .catbag {
   position: relative;
+
   text-align: center;
 }
 
@@ -10,29 +11,34 @@
 .catbag__overlay {
   position: absolute;
   top: 0;
-  color: #ffffff;
+
   width: 100%;
   height: 100%;
 
+  color: #ffffff;
+
   &::before {
     content: "";
+
     display: block;
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 60px 0;
     width: 55px;
     height: 62%;
     margin: auto;
+    padding: 60px 0;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .catbag__overlay p {
-  font-size: 16px;
-  font-family: "Arial", sans-serif;
-  color: rgb(255, 255, 255);
-  line-height: 1.25;
-  text-align: center;
   max-width: 175px;
   margin: auto;
+
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }

@@ -1,15 +1,15 @@
 .catalog-item {
   display: flex;
   flex-wrap: wrap;
-
-  padding: 20px;
   margin-top: -1px;
+  padding: 20px;
 
   border: 1px solid #ededed;
 }
 
 .catalog-item__image {
   flex: 50% 0 0;
+
   text-align: center;
 }
 

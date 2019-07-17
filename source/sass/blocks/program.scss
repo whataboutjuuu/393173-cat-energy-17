@@ -4,24 +4,26 @@
 
 .program__item {
   width: 100%;
-  padding: 20px 20px 0;
-  background-color: #f2f2f2;
   margin-top: 20px;
+  padding: 20px 20px 0;
+
+  background-color: #f2f2f2;
 }
 
 .program__title {
   position: relative;
+
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0 0 0 70px;
 
-  font-size: 24px;
-  color: rgb(17, 17, 17);
   font-weight: normal;
-  text-transform: uppercase;
+  font-size: 24px;
   line-height: 1.542;
   text-align: left;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
 
   &::before {
     content: "";
@@ -30,8 +32,9 @@
 
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+
     background-color: #68b738;
+    border-radius: 50%;
   }
 
   &::after {
@@ -39,16 +42,17 @@
     position: absolute;
 
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
+    background-size: contain;
   }
 
   &--slim::after {
-    left: 7px;
     top: -3px;
+    left: 7px;
 
     width: 37px;
     height: 51px;
+
     background-image: url("../img/icon-cat-slim.svg");
   }
 
@@ -57,43 +61,49 @@
 
     width: 64px;
     height: 28px;
+
     background-image: url("../img/icon-cat-pro.svg");
   }
 }
 
 .program__item p {
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.286;
+  font-family: "Arial", sans-serif;
   color: #444444;
 }
 
 .program__link {
+  display: block;
+  padding: 20px 0 20px;
+
   font-size: 16px;
-  color: rgb(17, 17, 17);
-  text-transform: uppercase;
   line-height: 1;
   text-align: left;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
   text-decoration: none;
-  padding: 20px 0 20px;
-  display: block;
+
   border-top: 1px solid #d9d9d9;
 
   &::after {
     content: "";
-    background-image: url("../img/icon-right-arrow-long.svg");
+
+    display: inline-block;
     width: 24px;
     height: 11px;
-    display: inline-block;
     margin-left: 25px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
   }
 
   &:hover,
   &:active {
     &::after {
-      background-image: url("../img/icon-right-arrow-verylong.svg");
       width: 32px;
       height: 11px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
   }
 

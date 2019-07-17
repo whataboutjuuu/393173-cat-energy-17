@@ -3,11 +3,12 @@
 }
 
 .site-main__title {
-  font-size: 36px;
+  margin: 0;
+  padding: 21px 20px;
+
   font-weight: normal;
-  color: rgb(17, 17, 17);
+  font-size: 36px;
   line-height: 1.667;
   text-align: left;
-  padding: 21px 20px;
-  margin: 0;
+  color: rgb(17, 17, 17);
 }

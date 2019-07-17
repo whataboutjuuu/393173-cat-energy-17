@@ -7,34 +7,36 @@
 .main-menu__toggle {
   width: 64px;
   padding: 20px;
-  border: none;
+
   background-color: transparent;
+  border: none;
 }
 
 .main-menu__list {
-  display: none;
   position: absolute;
   top: 0;
   right: 0;
 
+  display: none;
   width: 100vw;
-
   margin: 0;
   padding: 0;
 }
 
 .main-menu__item {
-  list-style: none;
   padding: 10px 20px;
+
+  list-style: none;
+
   background-color: #ffffff;
   border-bottom: 1px solid #e6e6e6;
 }
 
 .main-menu__item a {
   font-size: 20px;
+  line-height: 1;
+  text-align: center;
   color: rgb(17, 17, 17);
   text-transform: uppercase;
-  line-height: 1;
   text-decoration: none;
-  text-align: center;
 }
