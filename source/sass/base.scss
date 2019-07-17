@@ -1,0 +1,15 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $fontFamily;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
