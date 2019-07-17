@@ -1,0 +1,90 @@
+//
+// Checkboxes
+//
+
+$input-border: #d1d1d1;
+$input-bg: #ffffff;
+$input-bg-disabled: #e5e5e5;
+$input-color: $accentColor;
+
+.radio {
+  padding: 10px 0;
+}
+
+.radio .jlabel {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding-left: 50px;
+
+  font-size: 16px;
+  color: $fontColor;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    background-color: #ffffff;
+    border: 1px solid $input-border;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+
+    background-color: $accentColor;
+    border-color: $accentColor;
+    border-radius: 50%;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #bababa;
+  }
+}
+
+.radio input[type="radio"] {
+  position: absolute;
+  z-index: 1;
+
+  width: 0;
+  height: 0;
+
+  cursor: pointer;
+  opacity: 0;
+
+  &:focus + .jlabel::before {
+    box-shadow: 0 0 2px $accentColor;
+  }
+
+  &:checked + .jlabel::after {
+    content: "";
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:disabled + .jlabel {
+    opacity: 0.65;
+
+    &::before {
+      cursor: not-allowed;
+    }
+  }
+}

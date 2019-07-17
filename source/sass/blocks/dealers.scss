@@ -21,9 +21,9 @@
 
 .dealers__address {
   font-style: normal;
-  font-size: 14px;
+  font-size: $fontSize;
   line-height: 1.429;
-  font-family: "Arial", sans-serif;
+  font-family: $fontFamily;
   text-align: left;
   color: rgb(68, 68, 68);
 }

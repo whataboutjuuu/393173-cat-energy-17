@@ -11,15 +11,15 @@
   font-size: 36px;
   line-height: 1.667;
   text-align: left;
-  color: rgb(17, 17, 17);
+  color: $titleColor;
 }
 
 .example__description {
-  font-size: 14px;
+  font-size: $fontSize;
   line-height: 1.286;
-  font-family: "Arial", sans-serif;
+  font-family: $fontFamily;
   text-align: left;
-  color: rgb(68, 68, 68);
+  color: $fontColor;
 }
 
 .example__statistics {
@@ -29,9 +29,9 @@
 .example__cost {
   padding: 10px 0;
 
-  font-size: 14px;
+  font-size: $fontSize;
   line-height: 1.429;
   text-align: center;
-  color: rgb(17, 17, 17);
+  color: $titleColor;
   text-transform: uppercase;
 }

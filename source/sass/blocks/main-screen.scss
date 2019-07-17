@@ -20,10 +20,10 @@
 }
 
 .main-screen__heading h3 {
-  margin: 14px 0;
+  margin: $fontSize 0;
 
   font-weight: normal;
-  font-size: 14px;
+  font-size: $fontSize;
   line-height: 1;
   text-transform: uppercase;
 }

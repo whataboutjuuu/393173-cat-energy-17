@@ -30,7 +30,7 @@
   width: 35px;
   height: 6px;
 
-  background-color: #68b738;
+  background-color: $accentColor;
   border-radius: 6px;
 
   &--before {
@@ -47,13 +47,13 @@
 
   font-size: 16px;
   line-height: 1.25;
-  font-family: $fontFamily;
-  color: #111111;
+  font-family: $fontFamilyAccent;
+  color: $titleColor;
   text-transform: uppercase;
 
   background-color: transparent;
   border: none;
-  border-bottom: 1px dotted #111111;
+  border-bottom: 1px dotted $titleColor;
 
   &:hover {
     border-bottom-style: solid;

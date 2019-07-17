@@ -6,9 +6,9 @@
 
   font-size: 16px;
   line-height: 1;
-  font-family: "Arial", sans-serif;
+  font-family: $fontFamily;
   text-align: left;
-  color: #444444;
+  color: $fontColor;
   text-decoration: none;
 }
 
@@ -28,7 +28,7 @@
 
 .academy-logo:hover .academy-logo__image,
 .academy-logo:active .academy-logo__image {
-  color: #68b738;
+  color: $accentColor;
 }
 
 .academy-logo:active .academy-logo__image {

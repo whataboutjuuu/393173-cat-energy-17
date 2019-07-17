@@ -37,56 +37,61 @@
         <h3 class="form__title">Заполните анкету и мы подберем программу питания для вашего кота</h3>
         <div class="form__box">
           <fieldset class="form__group form__group--required">
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" placeholder="Барсик">
+            <label class="form__label" for="name">Имя:
+              <input class="form__input" type="text" id="name" name="name" placeholder="Барсик">
+            </label>
           </fieldset>
           <fieldset class="form__group form__group--required">
-            <label for="weight">Вес (кг):</label>
-            <input type="text" id="weight" name="weight" placeholder="7">
+            <label class="form__label" for="weight">Вес (кг):
+              <input class="form__input" type="text" id="weight" name="weight" placeholder="7">
+            </label>
           </fieldset>
           <fieldset class="form__group">
-            <label for="age">Возраст (лет):</label>
-            <input type="number" id="age" name="age" placeholder="7">
+            <label class="form__label" for="age">Возраст (лет):
+              <input class="form__input" type="number" id="age" name="age" placeholder="7">
+            </label>
           </fieldset>
         </div>
         <div class="form__box">
           <div class="radio">
             <label>
-              <input type="radio" name="program" value="slim" checked>
-              <span class="radio__label">Похудение</span>
+              <input type="radio" name="program" value="slim">
+              <span class="radio__label jlabel">Похудение</span>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="program" value="mass">
-              <span class="radio__label">Набор массы</span>
+              <span class="radio__label jlabel">Набор массы</span>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="program" value="advice">
-              <span class="radio__label">Не знаю (нужен ваш совет)</span>
+              <span class="radio__label jlabel">Не знаю (нужен ваш совет)</span>
             </label>
           </div>
         </div>
         <div class="form__box">
           <h3 class="subtitle">
             <span class="subtitle__text">Контактные данные<br>(владельца кота)</span>
-        </h3>
+          </h3>
           <fieldset class="form__group form__group--mail form__group--required">
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="mail" placeholder="kuklachev@gmail.com">
+            <label class="form__label" for="mail">E-mail:
+              <input class="form__input" type="email" id="mail" name="mail" placeholder="kuklachev@gmail.com">
+            </label>
           </fieldset>
           <fieldset class="form__group form__group--phone form__group--required">
-            <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+            <label class="form__label" for="phone">Телефон:
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+            </label>
           </fieldset>
           <h3 class="subtitle">
             <span class="subtitle__text">Комментарий</span>
           </h3>
           <fieldset class="form__group">
             <label for="comments" class="visually-hidden">Расскажите обо всех повадках кота</label>
-            <textarea rows="6" id="comments" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__input form__input--textarea" rows="6" id="comments" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <h3 class="subtitle">
             <span class="subtitle__text">Дополнительно</span>
@@ -94,35 +99,37 @@
           <div class="checkbox">
             <label>
               <input type="checkbox" name="additional" checked>
-              <span class="checkbox__label">Сахарозаменитель</span>
+              <span class="checkbox__label jlabel">Сахарозаменитель</span>
             </label>
           </div>
           <div class="checkbox">
             <label>
               <input type="checkbox" name="additional">
-              <span class="checkbox__label">Питьевая вода</span>
+              <span class="checkbox__label jlabel">Питьевая вода</span>
             </label>
           </div>
           <div class="checkbox">
             <label>
               <input type="checkbox" name="additional">
-              <span class="checkbox__label">Молоко</span>
+              <span class="checkbox__label jlabel">Молоко</span>
             </label>
           </div>
           <div class="checkbox">
             <label>
               <input type="checkbox" name="additional">
-              <span class="checkbox__label">Витамины</span>
+              <span class="checkbox__label jlabel">Витамины</span>
             </label>
           </div>
         </div>
-        <button type="submit" class="button">Отправить заявку</button>
-        <div class="form__hint">* &mdash; Обязательные поля</div>
+        <div class="form__button-row">
+          <button type="submit" class="button">Отправить заявку</button>
+          <div class="form__hint">* &mdash; Обязательные поля</div>
+        </div>
       </form>
     </main>
 
     <div class="contacts">
-      <div class="contacts__address dealers">
+      <div class="contacts__address dealers dealers--grey">
         <h3 class="dealers__title">приглашаем к сотрудничеству дилеров!</h3>
         <address class="dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>

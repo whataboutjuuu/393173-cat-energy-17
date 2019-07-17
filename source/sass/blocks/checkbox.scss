@@ -1,0 +1,88 @@
+$input-border: #d1d1d1;
+$input-bg: #ffffff;
+$input-bg-disabled: #e5e5e5;
+$input-color: $accentColor;
+
+.checkbox {
+  padding: 10px 0;
+}
+
+.checkbox .jlabel {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding-left: 50px;
+
+  font-size: 16px;
+  vertical-align: middle;
+  color: $fontColor;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    background-color: $input-bg;
+    border: 1px solid $input-border;
+    border-radius: 0;
+  }
+
+  &::after {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21.1 15.5'%3E%3Cpolygon points='20.1 0 7.7 13.3 1 6.1 0 7.2 7.6 15.4 7.7 15.5 21 1.2 21.1 1.1' fill='%2368b738'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px 16px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #bababa;
+  }
+}
+
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  z-index: 1;
+
+  width: 0;
+  height: 0;
+
+  cursor: pointer;
+  opacity: 0;
+
+  &:focus + .jlabel::before {
+    box-shadow: 0 0 2px $accentColor;
+  }
+
+  &:checked + .jlabel::after {
+    content: "";
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:disabled + .jlabel {
+    opacity: 0.65;
+
+    &::before {
+      cursor: not-allowed;
+    }
+  }
+}
