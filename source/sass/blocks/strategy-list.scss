@@ -12,11 +12,11 @@
   margin: 10px 0;
   padding: 0 0 0 70px;
 
-  font-size: 14px;
+  font-size: $fontSize;
   line-height: 1.286;
-  font-family: "Arial", sans-serif;
+  font-family: $fontFamily;
   text-align: left;
-  color: rgb(68, 68, 68);
+  color: $fontColor;
 
   &::before {
     content: "";
@@ -27,7 +27,7 @@
     width: 60px;
     height: 60px;
 
-    background-color: #68b738;
+    background-color: $accentColor;
     background-repeat: no-repeat;
     background-position: center;
   }

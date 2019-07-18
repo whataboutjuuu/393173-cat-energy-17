@@ -2,10 +2,39 @@
   position: relative;
 
   width: 100%;
+
+  .icon-open-menu {
+    display: block;
+  }
+
+  .icon-close-menu {
+    display: none;
+  }
+
+  &--shown {
+    .main-menu__toggle {
+      position: absolute;
+      top: -65px;
+      right: 0;
+    }
+
+    .icon-open-menu {
+      display: none;
+    }
+
+    .icon-close-menu {
+      display: block;
+    }
+
+    .main-menu__list {
+      display: block;
+    }
+  }
 }
 
 .main-menu__toggle {
   width: 64px;
+  height: 64px;
   padding: 20px;
 
   background-color: transparent;
@@ -13,7 +42,7 @@
 }
 
 .main-menu__list {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
 
@@ -24,15 +53,17 @@
 }
 
 .main-menu__item {
-  padding: 10px 20px;
+  padding: 20px;
 
   list-style: none;
+  text-align: center;
 
   background-color: #ffffff;
-  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
 }
 
 .main-menu__item a {
+  font-weight: bold;
   font-size: 20px;
   line-height: 1;
   text-align: center;

@@ -26,13 +26,13 @@
   font-size: 24px;
   line-height: 1;
   text-align: center;
-  color: rgb(17, 17, 17);
+  color: $titleColor;
   text-transform: uppercase;
 
   background-color: rgba(255, 255, 255, 0);
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(205, 205, 205);
+  border-color: #cdcdcd;
   border-radius: 3px;
 }
 
@@ -42,9 +42,9 @@
 
   font-size: 12px;
   line-height: 1;
-  font-family: "Arial", sans-serif;
+  font-family: $fontFamily;
   text-align: center;
-  color: rgb(68, 68, 68);
+  color: $fontColor;
 
   background-color: #f2f2f2;
 }

@@ -2,7 +2,7 @@
   font-size: 16px;
   line-height: 1.25;
   text-align: left;
-  color: #111111;
+  color: $titleColor;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -19,8 +19,8 @@
 .product__cell {
   font-size: 12px;
   line-height: 1.333;
-  font-family: "Arial", sans-serif;
-  color: #444444;
+  font-family: $fontFamily;
+  color: $fontColor;
 
   &:last-child {
     text-align: right;

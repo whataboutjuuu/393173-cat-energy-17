@@ -1,0 +1,127 @@
+.form {
+  width: 100%;
+}
+
+.form__title {
+  padding: 0 20px;
+
+  font-size: $fontSize;
+  line-height: 1.286;
+  color: $titleColor;
+  text-transform: uppercase;
+}
+
+.form__box {
+  padding: 20px;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.form__subtitle {
+  padding: 20px 0;
+}
+
+.form__group {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 15px 0;
+  padding: 0;
+
+  border: none;
+
+  &--iconed {
+    position: relative;
+  }
+}
+
+.form__label {
+  display: inherit;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 1.125;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.form__input {
+  display: inherit;
+  flex-grow: 1;
+  flex-basis: 50%;
+  height: 45px;
+  margin-left: 20px;
+  padding: 5px 15px;
+
+  font-size: 16px;
+  line-height: 1.125;
+  font-family: $fontFamilyAccent;
+  color: $fontColor;
+  text-transform: uppercase;
+
+  border: 1px solid #e6e6e6;
+
+  &--textarea {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding-top: 16px;
+
+    resize: vertical;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #cdcdcd;
+    outline: none;
+  }
+
+  &:active {
+    border-color: #444444;
+    outline: 1px solid #444444;
+
+    .form__input-icon {
+      fill: $accentColor;
+    }
+  }
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+
+  width: 41px;
+  height: 41px;
+  padding: 12px;
+
+  background-color: #ffffff;
+
+  fill: #222222;
+}
+
+.form__button-row {
+  padding: 0 20px;
+}
+
+.form__hint {
+  margin: $fontSize 0 $fontSize;
+
+  font-size: $fontSize;
+  line-height: 1.143;
+  font-family: $fontFamily;
+  text-align: center;
+  color: $fontColor;
+}
+
+.form__group.form__group--error {
+  .form__input {
+    border-color: #ff8282;
+    outline: 1px solid #ff8282;
+  }
+
+  .form__input-icon {
+    fill: #ff8282;
+  }
+}
