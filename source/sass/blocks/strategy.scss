@@ -1,5 +1,9 @@
 .strategy {
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
 }
 
 .strategy__title {
@@ -9,5 +13,11 @@
   font-size: 36px;
   line-height: 1.667;
   text-align: left;
-  color: rgb(17, 17, 17);
+  color: $titleColor;
+
+  @media (min-width: $tablet) {
+    margin: 40px 0;
+
+    font-size: 60px;
+  }
 }

@@ -1,5 +1,9 @@
 .program {
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
 }
 
 .program__item {
@@ -8,6 +12,10 @@
   padding: 20px 20px 0;
 
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet) {
+    padding: 75px 50px 50px;
+  }
 }
 
 .program__title {
@@ -25,6 +33,15 @@
   color: $titleColor;
   text-transform: uppercase;
 
+  @media (min-width: $tablet) {
+    right: 0;
+    left: auto;
+
+    padding: 0 225px 0 0;
+
+    font-size: 36px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -35,6 +52,15 @@
 
     background-color: $accentColor;
     border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      top: 20px;
+      right: 0;
+      left: auto;
+
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &::after {
@@ -54,6 +80,15 @@
     height: 51px;
 
     background-image: url("../img/icon-cat-slim.svg");
+
+    @media (min-width: $tablet) {
+      top: 20px;
+      right: 7px;
+      left: auto;
+
+      width: 148px;
+      height: 204px;
+    }
   }
 
   &--pro::after {
@@ -63,6 +98,15 @@
     height: 28px;
 
     background-image: url("../img/icon-cat-pro.svg");
+
+    @media (min-width: $tablet) {
+      top: 65px;
+      right: -8px;
+      left: auto;
+
+      width: 256px;
+      height: 112px;
+    }
   }
 }
 
@@ -71,6 +115,12 @@
   line-height: 1.286;
   font-family: $fontFamily;
   color: $fontColor;
+
+  @media (min-width: $tablet) {
+    padding-right: 225px;
+
+    font-size: 16px;
+  }
 }
 
 .program__link {
@@ -85,6 +135,12 @@
   text-decoration: none;
 
   border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+
+    border-top: none;
+  }
 
   &::after {
     content: "";

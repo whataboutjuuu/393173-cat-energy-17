@@ -39,6 +39,10 @@
 
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-menu__list {
@@ -50,6 +54,11 @@
   width: 100vw;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    width: auto;
+  }
 }
 
 .main-menu__item {
@@ -60,9 +69,13 @@
 
   background-color: #ffffff;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    border-top: none;
+  }
 }
 
-.main-menu__item a {
+.main-menu__link {
   font-weight: bold;
   font-size: 20px;
   line-height: 1;
@@ -70,4 +83,29 @@
   color: rgb(17, 17, 17);
   text-transform: uppercase;
   text-decoration: none;
+
+
+  @media (min-width: $tablet) {
+    padding: 4px 0;
+
+    font-weight: normal;
+    font-size: 18px;
+
+    border-bottom: 2px solid transparent;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    @media (min-width: $tablet) {
+      border-bottom-color: $accentColor;
+    }
+  }
 }

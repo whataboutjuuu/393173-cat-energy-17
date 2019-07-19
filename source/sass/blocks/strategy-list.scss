@@ -3,6 +3,13 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    counter-reset: strategyCounter;
+  }
 }
 
 .strategy-list__item {
@@ -18,6 +25,20 @@
   text-align: left;
   color: $fontColor;
 
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+    width: 50%;
+    margin: 0 0 70px;
+    padding: 0;
+
+    font-size: 16px;
+
+    p {
+      max-width: 215px;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -30,6 +51,31 @@
     background-color: $accentColor;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet) {
+      position: relative;
+      top: 0;
+
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &::after {
+    content: counter(strategyCounter);
+    position: absolute;
+    top: -35px;
+    right: 135px;
+    z-index: -1;
+
+    font-size: 281px;
+    line-height: 1;
+    font-family: $fontFamilyAccent;
+    color: #f2f2f2;
+
+    counter-increment: strategyCounter;
   }
 
   &--nutrition::before {
