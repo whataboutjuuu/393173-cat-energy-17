@@ -1,15 +1,23 @@
-html,
 body {
   margin: 0;
-  padding: 0;
+
+  font-family: $fontFamilyAccent;
 }
 
-body {
-  font-family: $fontFamilyAccent;
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }

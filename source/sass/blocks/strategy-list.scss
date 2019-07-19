@@ -63,19 +63,21 @@
     }
   }
 
-  &::after {
-    content: counter(strategyCounter);
-    position: absolute;
-    top: -35px;
-    right: 135px;
-    z-index: -1;
+  @media (min-width: $tablet) {
+    &::after {
+      content: counter(strategyCounter);
+      position: absolute;
+      top: -35px;
+      right: 135px;
+      z-index: -1;
 
-    font-size: 281px;
-    line-height: 1;
-    font-family: $fontFamilyAccent;
-    color: #f2f2f2;
+      font-size: 281px;
+      line-height: 1;
+      font-family: $fontFamilyAccent;
+      color: #f2f2f2;
 
-    counter-increment: strategyCounter;
+      counter-increment: strategyCounter;
+    }
   }
 
   &--nutrition::before {

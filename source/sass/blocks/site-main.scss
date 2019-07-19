@@ -10,5 +10,11 @@
   font-size: 36px;
   line-height: 1.667;
   text-align: left;
-  color: rgb(17, 17, 17);
+  color: #111111;
+
+  @media (min-width: $tablet) {
+    padding: 50px 30px;
+
+    font-size: 60px;
+  }
 }

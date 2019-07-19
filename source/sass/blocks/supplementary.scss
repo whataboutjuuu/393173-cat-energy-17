@@ -5,12 +5,25 @@
   list-style: none;
 
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+
+    border: none;
+  }
 }
 
 .supplementary__item {
   padding: 15px 0;
 
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet) {
+    margin-top: -1px;
+    padding: 20px 37px;
+
+    border: 1px solid #d9d9d9;
+  }
 }
 
 .supplementary__title {

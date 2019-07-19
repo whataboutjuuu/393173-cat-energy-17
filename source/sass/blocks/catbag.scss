@@ -17,6 +17,10 @@
 
   color: #ffffff;
 
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+
   &::before {
     content: "";
 
@@ -29,6 +33,7 @@
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: center;
+    filter: invert(1);
   }
 }
 
@@ -41,4 +46,8 @@
   font-family: $fontFamily;
   text-align: center;
   color: rgb(255, 255, 255);
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
 }

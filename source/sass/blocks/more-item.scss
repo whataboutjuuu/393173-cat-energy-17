@@ -2,10 +2,21 @@
   padding: 20px;
 
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-top: 70px;
+
+    border: 1px solid #e6e6e6;
+  }
 }
 
 .more-item__text {
   text-align: center;
+
+  @media (min-width: $tablet) {
+    max-width: 200px;
+    margin: auto;
+  }
 
   h5 {
     margin-bottom: 0;
@@ -15,6 +26,10 @@
     line-height: 1.25;
     color: $titleColor;
     text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+    }
   }
 
   p {
@@ -22,6 +37,10 @@
     line-height: 1.333;
     font-family: $fontFamily;
     color: $fontColor;
+
+    @media (min-width: $tablet) {
+      font-size: 16px;
+    }
   }
 
   &::before {
@@ -36,5 +55,10 @@
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.2;
+
+    @media (min-width: $tablet) {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
