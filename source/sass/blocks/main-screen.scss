@@ -1,10 +1,43 @@
 .main-screen {
+  position: relative;
+
+  @media (min-width: $desktop) {
+    min-height: 582px;
+    margin-bottom: 80px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -115px;
+      right: 0;
+      z-index: -1;
+
+      width: 50%;
+      height: calc(100% + 115px);
+
+      background-color: #65a93c;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: contain;
+    }
+  }
+}
+
+.main-screen__wrapper {
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     padding: 30px 110px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+    margin: auto;
+    padding-top: 130px;
+  }
 }
+
 .main-screen__heading {
   order: 1;
   min-height: 305px;
@@ -36,6 +69,12 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 1;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 40px;
+
+    font-size: 60px;
+  }
 }
 
 .main-screen__heading h3 {
@@ -45,6 +84,12 @@
   font-size: $fontSize;
   line-height: 1;
   text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 40px;
+
+    font-size: 20px;
+  }
 }
 
 .main-screen__image {
@@ -54,6 +99,11 @@
   @media (min-width: $tablet) {
     order: 3;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    right: 25%;
   }
 }
 

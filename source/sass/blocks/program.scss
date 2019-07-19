@@ -4,6 +4,13 @@
   @media (min-width: $tablet) {
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    max-width: $desktop;
+    margin: auto;
+    padding: 0;
+  }
 }
 
 .program__item {
@@ -15,6 +22,10 @@
 
   @media (min-width: $tablet) {
     padding: 75px 50px 50px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 40px;
   }
 }
 
@@ -33,11 +44,17 @@
   color: $titleColor;
   text-transform: uppercase;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
     right: 0;
     left: auto;
 
     padding: 0 225px 0 0;
+
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 0 165px;
 
     font-size: 36px;
   }
@@ -60,6 +77,15 @@
 
       width: 200px;
       height: 200px;
+    }
+
+    @media (min-width: $desktop) {
+      top: -22px;
+      right: auto;
+      left: 0;
+
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -89,6 +115,15 @@
       width: 148px;
       height: 204px;
     }
+
+    @media (min-width: $desktop) {
+      top: -32px;
+      right: auto;
+      left: 7px;
+
+      width: 74px;
+      height: 102px;
+    }
   }
 
   &--pro::after {
@@ -107,6 +142,15 @@
       width: 256px;
       height: 112px;
     }
+
+    @media (min-width: $desktop) {
+      top: -3px;
+      right: auto;
+      left: -24px;
+
+      width: 128px;
+      height: 56px;
+    }
   }
 }
 
@@ -120,6 +164,11 @@
     padding-right: 225px;
 
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 50px;
+    padding: 0;
   }
 }
 

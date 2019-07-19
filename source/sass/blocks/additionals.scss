@@ -1,8 +1,19 @@
+.additionals {
+  @media (min-width: $desktop) {
+    overflow-x: hidden;
+  }
+}
+
 .additionals__title {
   padding: 20px 0 20px 20px;
 
   @media (min-width: $tablet) {
     padding: 30px 0 30px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+    margin: auto;
   }
 }
 

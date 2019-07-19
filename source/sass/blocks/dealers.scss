@@ -6,6 +6,13 @@
   &--grey {
     background-color: #f2f2f2;
   }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 140px;
+
+    background-color: #ffffff;
+  }
 }
 
 .dealers__title {

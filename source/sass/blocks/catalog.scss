@@ -21,3 +21,19 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .catalog {
+    padding: 0 40px;
+  }
+
+  .catalog__item {
+    flex-basis: calc(25% - 40px);
+    margin-right: 40px;
+    margin-left: 40px;
+
+    // &:nth-child(n+4) {
+    //   margin-right: 0;
+    // }
+  }
+}

@@ -10,18 +10,25 @@
     top: $fontSize;
     right: 0;
 
-    width: 90%;
+    width: 150%;
     height: 3px;
 
     background-color: $accentColor;
 
     @media (min-width: $tablet) {
       top: 22px;
+      right: -30px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 22px;
+      right: 0;
+      left: 0;
     }
   }
 
-  @media (min-width: $tablet) {
-    &::before {
+  &::before {
+    @media (min-width: $tablet) {
       content: "";
       position: absolute;
       top: 22px;
@@ -32,6 +39,12 @@
 
       background-color: $accentColor;
     }
+
+    @media (min-width: $desktop) {
+      left: -100%;
+
+      width: 100%;
+    }
   }
 }
 
@@ -40,6 +53,7 @@
   z-index: 1;
 
   display: inline-block;
+  max-width: 210px;
   padding-right: 24px;
 
   font-weight: normal;
@@ -51,6 +65,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet) {
+    max-width: none;
     padding-right: 35px;
     padding-left: 35px;
 

@@ -59,7 +59,7 @@
             </label>
           </fieldset>
         </div>
-        <div class="form__box">
+        <div class="form__box form__radiogroup">
           <div class="radio">
             <label>
               <input type="radio" name="program" value="slim" checked>
@@ -82,7 +82,7 @@
         <div class="form__box">
           <div class="form__subtitle">
             <h3 class="subtitle">
-              <span class="subtitle__text">Контактные данные<br>(владельца кота)</span>
+              <span class="subtitle__text">Контактные данные (владельца кота)</span>
             </h3>
           </div>
           <fieldset class="form__group form__group--iconed form__group--required">
@@ -115,29 +115,31 @@
               <span class="subtitle__text">Дополнительно</span>
             </h3>
           </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="additional" checked>
-              <span class="checkbox__label jlabel">Сахарозаменитель</span>
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="additional">
-              <span class="checkbox__label jlabel">Питьевая вода</span>
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="additional">
-              <span class="checkbox__label jlabel">Молоко</span>
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="additional">
-              <span class="checkbox__label jlabel">Витамины</span>
-            </label>
+          <div class="form__checkgroup">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="additional" checked>
+                <span class="checkbox__label jlabel">Сахарозаменитель</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="additional">
+                <span class="checkbox__label jlabel">Питьевая вода</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="additional">
+                <span class="checkbox__label jlabel">Молоко</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="additional">
+                <span class="checkbox__label jlabel">Витамины</span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="form__button-row">
@@ -160,48 +162,50 @@
     </div>
 
     <footer class="site-footer">
-      <div class="site-footer__logobox">
-        <div class="logotype">
-          <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+      <div class="site-footer__wrapper">
+        <div class="site-footer__logobox">
+          <div class="logotype">
+            <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+          </div>
         </div>
-      </div>
-      <div class="site-footer__social">
-        <ul class="socials">
-          <li class="socials__item">
-            <a href="#" class="social-button social-button--vk">
+        <div class="site-footer__social">
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="#" class="social-button social-button--vk">
+                <svg>
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+                <span class="visually-hidden">Мы ВКонтакте</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="social-button social-button--instagram">
+                <svg>
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Instagram</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="social-button social-button--fb">
+                <svg>
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__academy">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-logo">
+            HTML Academy
+            <span class="academy-logo__image">
               <svg>
-                <use xlink:href="#icon-vk"></use>
+                <use xlink:href="#icon-academy"></use>
               </svg>
-              <span class="visually-hidden">Мы ВКонтакте</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="social-button social-button--instagram">
-              <svg>
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Instagram</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="social-button social-button--fb">
-              <svg>
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Facebook</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="site-footer__academy">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-logo">
-          HTML Academy
-          <span class="academy-logo__image">
-            <svg>
-              <use xlink:href="#icon-academy"></use>
-            </svg>
-          </span>
-        </a>
+            </span>
+          </a>
+        </div>
       </div>
     </footer>
 

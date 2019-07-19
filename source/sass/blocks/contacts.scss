@@ -1,3 +1,9 @@
+.contacts {
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
 .contacts__map {
   max-width: 100%;
 

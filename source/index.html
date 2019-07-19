@@ -22,7 +22,7 @@
             <img src="img/icon-mobile-menu.svg" alt="Значок открыть меню" class="icon-open-menu">
             <img src="img/icon-close.svg" alt="Значок закрыть меню" class="icon-close-menu">
           </button>
-          <ul class="main-menu__list">
+          <ul class="main-menu__list main-menu__list--contrast">
             <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#">Главная</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог продукции</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор программы</a></li>
@@ -32,12 +32,14 @@
     </header>
 
     <div class="main-screen">
-      <div class="main-screen__heading">
-        <h2>Функциональное питание для котов</h2>
-        <h3>Занялся собой? Займись котом!</h3>
+      <div class="main-screen__wrapper">
+        <div class="main-screen__heading">
+          <h2>Функциональное питание для котов</h2>
+          <h3>Занялся собой? Займись котом!</h3>
+        </div>
+        <img src="img/index-can-mobile@1x.png" alt="Cat Energy Pro с Курицей" class="main-screen__image">
+        <a href="form.html" class="button button--main-screen">Подобрать программу</a>
       </div>
-      <img src="img/index-can-mobile@1x.png" alt="Cat Energy Pro с Курицей" class="main-screen__image">
-      <a href="form.html" class="button button--main-screen">Подобрать программу</a>
     </div>
 
     <div class="program">
@@ -126,48 +128,50 @@
     </div>
 
     <footer class="site-footer">
-      <div class="site-footer__logobox">
-        <div class="logotype">
-          <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+      <div class="site-footer__wrapper">
+        <div class="site-footer__logobox">
+          <div class="logotype">
+            <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+          </div>
         </div>
-      </div>
-      <div class="site-footer__social">
-        <ul class="socials">
-          <li class="socials__item">
-            <a href="#" class="social-button social-button--vk">
+        <div class="site-footer__social">
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="#" class="social-button social-button--vk">
+                <svg>
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+                <span class="visually-hidden">Мы ВКонтакте</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="social-button social-button--instagram">
+                <svg>
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Instagram</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="social-button social-button--fb">
+                <svg>
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__academy">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-logo">
+            HTML Academy
+            <span class="academy-logo__image">
               <svg>
-                <use xlink:href="#icon-vk"></use>
+                <use xlink:href="#icon-academy"></use>
               </svg>
-              <span class="visually-hidden">Мы ВКонтакте</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="social-button social-button--instagram">
-              <svg>
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Instagram</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="social-button social-button--fb">
-              <svg>
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Facebook</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="site-footer__academy">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-logo">
-          HTML Academy
-          <span class="academy-logo__image">
-            <svg>
-              <use xlink:href="#icon-academy"></use>
-            </svg>
-          </span>
-        </a>
+            </span>
+          </a>
+        </div>
       </div>
     </footer>
 

@@ -7,6 +7,15 @@
 
   @media (min-width: $tablet) {
     flex-wrap: nowrap;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop) {
+    flex-wrap: nowrap;
+    max-width: $desktop;
+    margin: auto;
+    padding-top: 50px;
   }
 }
 
@@ -24,6 +33,10 @@
     align-self: center;
     height: auto;
     padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 40px;
   }
 }
 

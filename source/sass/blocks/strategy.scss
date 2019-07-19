@@ -4,6 +4,12 @@
   @media (min-width: $tablet) {
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+    margin: auto;
+    padding: 0;
+  }
 }
 
 .strategy__title {
@@ -19,5 +25,9 @@
     margin: 40px 0;
 
     font-size: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 40px;
   }
 }
