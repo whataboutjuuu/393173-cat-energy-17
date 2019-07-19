@@ -1,39 +1,29 @@
-@media (min-width: $tablet) {
-  .catalog {
-    padding: 0 30px;
+.catalog {
+  @media (min-width: $tablet) {
+    padding: 0;
   }
 
-  .catalog__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .catalog__item {
-    flex-basis: calc(50% - 30px);
-    margin-bottom: 70px;
-
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
-
-    &:nth-child(even) {
-      margin-left: 30px;
-    }
+  @media (min-width: $desktop) {
+    @include container;
   }
 }
 
-@media (min-width: $desktop) {
-  .catalog {
-    padding: 0 40px;
+.catalog__list {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet) {
+    flex-basis: calc(50% - 60px);
+    margin: 0 30px 70px;
   }
 
-  .catalog__item {
-    flex-basis: calc(25% - 40px);
+  @media (min-width: $desktop) {
+    flex-basis: calc(25% - 80px);
     margin-right: 40px;
     margin-left: 40px;
-
-    // &:nth-child(n+4) {
-    //   margin-right: 0;
-    // }
   }
 }

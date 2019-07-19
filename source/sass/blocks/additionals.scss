@@ -1,5 +1,5 @@
 .additionals {
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     overflow-x: hidden;
   }
 }
@@ -12,8 +12,21 @@
   }
 
   @media (min-width: $desktop) {
-    max-width: $desktop;
-    margin: auto;
+    @include container;
+  }
+}
+
+.additionals__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+
+    @include container;
+  }
+}
+
+.additionals__list {
+  @media (min-width: $desktop) {
+    flex-basis: 75%;
   }
 }
 
@@ -22,5 +35,10 @@
 
   @media (min-width: $tablet) {
     padding: 70px 30px 75px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: 25%;
+    padding: 0 40px;
   }
 }

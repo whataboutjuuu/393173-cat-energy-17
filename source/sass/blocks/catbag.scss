@@ -2,6 +2,12 @@
   position: relative;
 
   text-align: center;
+
+  @media (min-width: $desktop) {
+    height: 100%;
+
+    background-color: $accentColor;
+  }
 }
 
 .catbag__image {
@@ -19,6 +25,10 @@
 
   @media (min-width: $tablet) {
     display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
   }
 
   &::before {
@@ -49,5 +59,9 @@
 
   @media (min-width: $tablet) {
     text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
   }
 }

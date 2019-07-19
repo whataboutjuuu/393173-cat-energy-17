@@ -2,13 +2,6 @@
   background-color: #ffffff;
 }
 
-.site-main__wrapper {
-  @media (min-width: $desktop) {
-    max-width: $desktop;
-    margin: auto;
-  }
-}
-
 .site-main__title {
   margin: 0;
   padding: 21px 20px;
@@ -23,5 +16,11 @@
     padding: 50px 30px;
 
     font-size: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 50px 40px;
+
+    @include container;
   }
 }

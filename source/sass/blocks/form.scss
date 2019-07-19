@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet) {
     padding-bottom: 70px;
+    overflow-x: hidden;
   }
 }
 
@@ -21,6 +22,12 @@
 
     font-size: 20px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0 40px;
+
+    @include container;
+  }
 }
 
 .form__box {
@@ -33,10 +40,20 @@
 
     border-bottom: none;
   }
+
+  @media (min-width: $desktop) {
+    padding: 30px 40px;
+
+    @include container;
+  }
 }
 
 .form__subtitle {
   padding: 20px 0;
+
+  @media (min-width: $desktop) {
+    @include container;
+  }
 }
 
 .form__group {
@@ -54,6 +71,10 @@
 
   @media (min-width: $tablet) {
     margin: 15px 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 20px 0;
   }
 }
 
@@ -86,6 +107,10 @@
   line-height: 1.125;
   color: #222222;
   text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+  }
 }
 
 .form__input {
@@ -103,6 +128,12 @@
   text-transform: uppercase;
 
   border: 1px solid #e6e6e6;
+
+  @media (min-width: $desktop) {
+    height: 52px;
+
+    font-size: 20px;
+  }
 
   &--textarea {
     width: 100%;
