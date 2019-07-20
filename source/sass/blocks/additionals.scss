@@ -1,7 +1,44 @@
+.additionals {
+  @media (min-width: $tablet) {
+    overflow-x: hidden;
+  }
+}
+
 .additionals__title {
   padding: 20px 0 20px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 30px 0 30px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    @include container;
+  }
+}
+
+.additionals__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+
+    @include container;
+  }
+}
+
+.additionals__list {
+  @media (min-width: $desktop) {
+    flex-basis: 75%;
+  }
 }
 
 .additionals__gift {
   padding: 40px 20px 35px;
+
+  @media (min-width: $tablet) {
+    padding: 70px 30px 75px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: 25%;
+    padding: 0 40px;
+  }
 }

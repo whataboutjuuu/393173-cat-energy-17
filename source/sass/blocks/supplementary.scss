@@ -5,12 +5,36 @@
   list-style: none;
 
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+
+    border: none;
+  }
 }
 
 .supplementary__item {
   padding: 15px 0;
 
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet) {
+    margin-top: -1px;
+    padding: 20px 37px;
+
+    border: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    margin-right: 37px;
+    margin-left: 37px;
+    padding: 15px 0;
+
+    border-right: none;
+    border-left: none;
+  }
 }
 
 .supplementary__title {
@@ -23,6 +47,11 @@
   text-align: left;
   color: #222222;
   text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    flex-shrink: 0;
+    flex-basis: 325px;
+  }
 }
 
 .supplementary__costs {
@@ -34,4 +63,11 @@
   line-height: 1;
   font-family: $fontFamily;
   color: $fontColor;
+
+  @media (min-width: $desktop) {
+    flex-shrink: 0;
+    flex-basis: 330px;
+    margin-bottom: 0;
+    padding-right: 40px;
+  }
 }

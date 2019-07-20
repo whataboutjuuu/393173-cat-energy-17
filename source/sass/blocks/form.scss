@@ -1,24 +1,59 @@
 .form {
   width: 100%;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 70px;
+    overflow-x: hidden;
+  }
 }
 
 .form__title {
   padding: 0 20px;
 
+  font-weight: normal;
   font-size: $fontSize;
   line-height: 1.286;
   color: $titleColor;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    max-width: 370px;
+    margin-left: 40px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 40px;
+
+    @include container;
+  }
 }
 
 .form__box {
   padding: 20px;
 
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: $tablet) {
+    padding: 30px;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 30px 40px;
+
+    @include container;
+  }
 }
 
 .form__subtitle {
   padding: 20px 0;
+
+  @media (min-width: $desktop) {
+    @include container;
+  }
 }
 
 .form__group {
@@ -33,6 +68,35 @@
   &--iconed {
     position: relative;
   }
+
+  @media (min-width: $tablet) {
+    margin: 15px 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 20px 0;
+  }
+}
+
+.form__checkgroup {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+
+    .checkbox {
+      flex-basis: 50%;
+    }
+  }
+}
+
+.form__radiogroup {
+  @media (min-width: $tablet) {
+    margin-right: 60px;
+    margin-left: 60px;
+
+    border: 1px solid #e6e6e6;
+  }
 }
 
 .form__label {
@@ -43,6 +107,10 @@
   line-height: 1.125;
   color: #222222;
   text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+  }
 }
 
 .form__input {
@@ -60,6 +128,12 @@
   text-transform: uppercase;
 
   border: 1px solid #e6e6e6;
+
+  @media (min-width: $desktop) {
+    height: 52px;
+
+    font-size: 20px;
+  }
 
   &--textarea {
     width: 100%;
@@ -103,6 +177,11 @@
 
 .form__button-row {
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    padding: 0 60px;
+  }
 }
 
 .form__hint {
@@ -113,6 +192,14 @@
   font-family: $fontFamily;
   text-align: center;
   color: $fontColor;
+
+  @media (min-width: $tablet) {
+    flex-shrink: 0;
+    flex-basis: 50%;
+    margin-left: 60px;
+
+    text-align: left;
+  }
 }
 
 .form__group.form__group--error {

@@ -2,6 +2,23 @@
   padding: 0 20px;
 
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+}
+
+.site-footer__wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+    margin: auto;
+  }
 }
 
 .site-footer__logobox {
@@ -15,4 +32,8 @@
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
 }

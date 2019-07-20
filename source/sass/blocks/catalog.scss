@@ -1,0 +1,25 @@
+.catalog {
+  @media (min-width: $desktop) {
+    @include container;
+  }
+}
+
+.catalog__list {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet) {
+    flex-basis: calc(50% - 60px);
+    margin: 0 30px 70px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: calc(25% - 80px);
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
