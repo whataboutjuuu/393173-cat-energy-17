@@ -1,4 +1,7 @@
 .product__title {
+  display: block;
+  max-width: 100px;
+
   font-size: 16px;
   line-height: 1.25;
   text-align: left;
@@ -7,7 +10,8 @@
   text-decoration: none;
 
   @media (min-width: $tablet) {
-    display: block;
+    max-width: 135px;
+    margin: auto;
     margin-bottom: 25px;
 
     font-size: 20px;

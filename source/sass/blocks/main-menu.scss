@@ -56,6 +56,8 @@
   padding: 0;
 
   @media (min-width: $tablet) {
+    position: static;
+
     display: flex;
     width: auto;
   }
