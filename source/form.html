@@ -155,9 +155,12 @@
         <address class="dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="contacts__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d840.3107303481751!2d30.322291732911115!3d59.9386631967018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1563278487876!5m2!1sru!2sua"
-          width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+        <picture>
+          <source srcset="img/bg-map-mobile@1x.png" media="(max-width: 500px)">
+          <source srcset="img/bg-map-tablet@1x.png" media="(max-width: 768px)">
+          <source srcset="img/bg-map-desktop@1x.png" media="(max-width: 1440px)">
+          <img src="img/bg-map-desktop@1x.png" alt="Map">
+        </picture>
       </div>
     </div>
 
