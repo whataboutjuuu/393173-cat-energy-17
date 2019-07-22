@@ -19,6 +19,12 @@ $input-color: $accentColor;
   color: $fontColor;
   text-transform: uppercase;
 
+  @media (min-width: $tablet) {
+    min-height: 40px;
+
+    font-size: 20px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -32,6 +38,11 @@ $input-color: $accentColor;
     background-color: #ffffff;
     border: 1px solid $input-border;
     border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &::after {
@@ -46,6 +57,15 @@ $input-color: $accentColor;
     background-color: $accentColor;
     border-color: $accentColor;
     border-radius: 50%;
+
+
+    @media (min-width: $tablet) {
+      top: 11px;
+      left: 11px;
+
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &:hover::before,

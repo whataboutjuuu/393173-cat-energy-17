@@ -2,6 +2,10 @@
   @media (min-width: $tablet) {
     overflow-x: hidden;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 85px;
+  }
 }
 
 .additionals__title {
@@ -12,6 +16,8 @@
   }
 
   @media (min-width: $desktop) {
+    padding: 40px 0 40px 40px;
+
     @include container;
   }
 }
