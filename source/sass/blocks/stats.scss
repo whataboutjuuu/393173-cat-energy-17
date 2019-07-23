@@ -4,6 +4,14 @@
   padding-left: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet) {
+    flex-basis: 370px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: 100%;
+  }
 }
 
 .stats__element {
@@ -34,6 +42,12 @@
   border-style: solid;
   border-color: #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: $tablet) {
+    padding: 21px 10px 20px;
+
+    font-size: 30px;
+  }
 }
 
 .stats__position {
@@ -47,4 +61,17 @@
   color: $fontColor;
 
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet) {
+    width: 133px;
+    margin-top: -8px;
+
+    font-size: $fontSize;
+
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: #f2f2f2;
+  }
 }

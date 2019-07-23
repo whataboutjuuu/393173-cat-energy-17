@@ -4,9 +4,35 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet) {
+    position: relative;
+
     padding: 0;
 
     background-color: #ffffff;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop) {
+    // margin-top: 120px;
+    padding-bottom: 65px;
+
+    background: rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(242, 242, 242, 1) 25%, rgba(242, 242, 242, 1) 100%);
+    border-top: none;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet) {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include container;
   }
 }
 
@@ -25,6 +51,14 @@
 
     font-size: 60px;
   }
+
+  @media (min-width: $desktop) {
+    flex-basis: 100%;
+  }
+}
+
+.example__text {
+  flex-basis: 50%;
 }
 
 .example__description {
@@ -44,6 +78,16 @@
 
 .example__statistics {
   padding-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-wrap: wrap;
+  }
 }
 
 .example__cost {
@@ -54,4 +98,19 @@
   text-align: center;
   color: $titleColor;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    flex-basis: 190px;
+    margin-left: auto;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: 100%;
+    width: 100%;
+
+    text-align: left;
+  }
 }

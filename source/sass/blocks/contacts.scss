@@ -1,14 +1,57 @@
 .contacts {
   @media (min-width: $desktop) {
     position: relative;
+
+    height: 400px;
+  }
+}
+
+.contacts__address {
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 100px;
+    left: calc((100% - 1300px) / 2 + 30px);
+    z-index: 1;
   }
 }
 
 .contacts__map {
-  max-width: 100%;
+  position: relative;
 
-  iframe {
+  max-width: 100%;
+  height: 360px;
+
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+
+    background-image: url("../img/bg-map-tablet@1x.png");
+  }
+
+  @media (min-width: $desktop) {
+    height: 400px;
+
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 53px);
+    left: calc(50% - 62px);
+
     display: block;
-    width: 100%;
+    width: 124px;
+    height: 106px;
+
+    background-image: url("../img/map-pin.png");
+
+    @media (min-width: $desktop) {
+      left: calc(75% - 62px);
+    }
   }
 }
