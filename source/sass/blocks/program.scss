@@ -16,7 +16,7 @@
 .program__item {
   width: 100%;
   margin-top: 20px;
-  padding: 20px 20px 0;
+  padding: 32px 20px 0;
 
   background-color: #f2f2f2;
 
@@ -59,7 +59,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 2px;
 
     width: 50px;
     height: 50px;
@@ -96,8 +96,8 @@
   }
 
   &--slim::after {
-    top: -3px;
-    left: 7px;
+    top: -9px;
+    left: 9px;
 
     width: 37px;
     height: 51px;
@@ -124,7 +124,8 @@
   }
 
   &--pro::after {
-    left: -8px;
+    top: 3px;
+    left: -5px;
 
     width: 64px;
     height: 28px;
@@ -152,6 +153,9 @@
 }
 
 .program__item p {
+  margin-top: 29px;
+  margin-bottom: 22px;
+
   font-size: $fontSize;
   line-height: 1.286;
   font-family: $fontFamily;
@@ -194,7 +198,10 @@
     display: inline-block;
     width: 24px;
     height: 11px;
-    margin-left: 25px;
+    margin-top: 2px;
+    margin-left: 11px;
+
+    vertical-align: top;
 
     background-image: url("../img/icon-right-arrow-long.svg");
   }

@@ -41,7 +41,7 @@
 .main-screen__heading {
   order: 1;
   min-height: 305px;
-  padding: 25px 20px 0;
+  padding: 27px 20px 0;
 
   text-align: center;
   color: #ffffff;
@@ -78,7 +78,7 @@
 }
 
 .main-screen__heading h3 {
-  margin: $fontSize 0;
+  margin: 25px 0;
 
   font-weight: normal;
   font-size: $fontSize;
@@ -94,7 +94,9 @@
 
 .main-screen__image {
   display: block;
-  margin: -135px auto 0;
+  margin: -164px auto -2px;
+
+  text-align: center;
 
   @media (min-width: $tablet) {
     order: 3;

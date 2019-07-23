@@ -11,7 +11,12 @@
     <header class="site-header">
       <div class="site-header__logobox">
         <div class="logotype">
-          <img src="img/logo-mobile.svg" alt="Cat Energy" class="logotype__image">
+          <picture class="logotype__image">
+            <source srcset="img/logo-mobile.svg" media="(max-width: 767px)">
+            <source srcset="img/logo-tablet.svg" media="(max-width: 1299px)">
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+            <img src="img/logo-desktop.svg" alt="Cat Energy">
+          </picture>
           <h1 class="visually-hidden"><strong>Cat</strong> Energy</h1>
         </div>
       </div>
@@ -37,7 +42,13 @@
           <h2>Функциональное питание для котов</h2>
           <h3>Занялся собой? Займись котом!</h3>
         </div>
-        <img src="img/index-can-mobile@1x.png" alt="Cat Energy Pro с Курицей" class="main-screen__image">
+        <!-- <img src="img/index-can-mobile@1x.png" alt="Cat Energy Pro с Курицей" class="main-screen__image"> -->
+        <picture class="main-screen__image">
+          <source srcset="img/index-can-mobile@1x.png" media="(max-width: 767px)">
+          <source srcset="img/index-can-tablet@1x.jpg" media="(max-width: 1299px)">
+          <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1300px)">
+          <img src="img/index-can-mobile@1x.png" alt="Cat Energy Pro с Курицей">
+        </picture>
         <a href="form.html" class="button button--main-screen">Подобрать программу</a>
       </div>
     </div>
@@ -207,6 +218,6 @@
 
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
-
+    <div class="pixel"></div>
   </body>
 </html>
