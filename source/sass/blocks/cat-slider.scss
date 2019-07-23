@@ -18,13 +18,7 @@
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
-    top: -80px;
-    right: 0;
-
-    &::before {
-      display: none;
-    }
+    margin-top: -130px;
   }
 }
 
