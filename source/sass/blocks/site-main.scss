@@ -13,13 +13,13 @@
   color: #111111;
 
   @media (min-width: $tablet) {
-    padding: 10px 30px 55px;
+    padding: 10px 30px 35px;
 
     font-size: 60px;
   }
 
   @media (min-width: $desktop) {
-    padding: 50px 40px 55px;
+    padding: 50px 40px 34px;
 
     @include container;
   }

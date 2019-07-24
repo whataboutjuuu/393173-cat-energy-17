@@ -46,7 +46,7 @@
     <main class="site-main">
       <h2 class="site-main__title">Подбор программы</h2>
       <form class="form" action="https://echo.htmlacademy.ru">
-        <h3 class="form__title">Заполните анкету и мы подберем программу питания для вашего кота</h3>
+        <h3 class="form__title"><div>Заполните анкету и мы подберем программу питания для вашего кота</div></h3>
         <div class="form__box">
           <div class="form__row">
             <div class="">
@@ -88,13 +88,13 @@
             </div>
           </div>
         </div>
-        <!-- <div class="form__box"> -->
+
         <div class="form__subtitle">
           <h3 class="subtitle">
             <span class="subtitle__text">Контактные данные (владельца кота)</span>
           </h3>
         </div>
-        <div class="form__box">
+        <div class="form__box form__box--contacts">
           <div class="form__row form__row--contacts">
             <fieldset class="form__group form__group--iconed form__group--required">
               <label class="form__label" for="mail">E-mail:*
@@ -119,19 +119,19 @@
             <span class="subtitle__text">Комментарий</span>
           </h3>
         </div>
-        <div class="form__box">
+        <div class="form__box form__box--comments">
           <fieldset class="form__group">
             <label for="comments" class="visually-hidden">Расскажите обо всех повадках кота</label>
             <textarea class="form__input form__input--textarea" rows="6" id="comments" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          </div>
+        </div>
 
-          <div class="form__subtitle">
-            <h3 class="subtitle">
-              <span class="subtitle__text">Дополнительно</span>
-            </h3>
-          </div>
-          <div class="form__box">
+        <div class="form__subtitle">
+          <h3 class="subtitle">
+            <span class="subtitle__text">Дополнительно</span>
+          </h3>
+        </div>
+        <div class="form__box form__box--checkgroup">
           <div class="form__checkgroup">
             <div class="checkbox">
               <label>
@@ -264,6 +264,5 @@
     </svg>
 
     <script src="js/menu.js"></script>
-<div class="pixel"></div>
   </body>
 </html>

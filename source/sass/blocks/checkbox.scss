@@ -4,7 +4,11 @@ $input-bg-disabled: #e5e5e5;
 $input-color: $accentColor;
 
 .checkbox {
-  padding: 10px 0;
+  padding: 6px 0;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .checkbox .jlabel {
@@ -13,7 +17,7 @@ $input-color: $accentColor;
   display: flex;
   align-items: center;
   min-height: 30px;
-  padding-left: 50px;
+  padding-left: 46px;
 
   font-size: 16px;
   vertical-align: middle;
@@ -22,6 +26,7 @@ $input-color: $accentColor;
 
   @media (min-width: $tablet) {
     min-height: 40px;
+    padding-left: 58px;
 
     font-size: 20px;
   }
