@@ -1,6 +1,7 @@
 .product__title {
   display: block;
   max-width: 100px;
+  margin-bottom: 14px;
 
   font-size: 16px;
   line-height: 1.25;
@@ -12,9 +13,10 @@
   @media (min-width: $tablet) {
     max-width: 135px;
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 
     font-size: 20px;
+    line-height: 1;
     text-align: center;
   }
 }
@@ -28,7 +30,7 @@
   border: none;
 
   @media (min-width: $tablet) {
-    margin-bottom: 30px;
+    margin-bottom: 0;
 
     tr {
       border-bottom: 1px solid #cdcdcd;
@@ -38,7 +40,7 @@
 
 .product__cell {
   font-size: 12px;
-  line-height: 1.333;
+  line-height: 1.2;
   font-family: $fontFamily;
   color: $fontColor;
 
@@ -48,5 +50,6 @@
 
   @media (min-width: $tablet) {
     font-size: 16px;
+    line-height: 1.85;
   }
 }

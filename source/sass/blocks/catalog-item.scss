@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: -1px;
-  padding: 20px;
+  padding: 0 17px 29px;
 
   border: 1px solid #ededed;
 
@@ -10,11 +10,17 @@
     // flex-direction: column;
     // flex-wrap: nowrap;
     display: block;
-    margin-top: 70px;
-    padding: 20px 35px 40px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    padding: 20px 0 43px;
 
     background-color: #f2f2f2;
     border: none;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 52px;
+    padding-bottom: 37px;
   }
 }
 
@@ -23,20 +29,48 @@
 
   text-align: center;
 
-  @media (min-width: $tablet) {
+  picture {
     display: block;
-    margin-top: -120px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: flex-end;
+    height: 208px;
+    margin-top: -97px;
   }
 }
 
 .catalog-item__info {
   flex: 50% 0 0;
+  padding-top: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    padding: 33px 37px 40px;
+  }
 }
 
 .catalog-item__action {
   flex: 100% 0 0;
+  margin: -5px 0 0;
+  padding: 0 2px;
+
+  .button {
+    font-size: 16px;
+  }
 
   @media (min-width: $tablet) {
     flex-basis: auto;
+    padding: 0 35px;
+
+    .button {
+      height: 40px;
+    }
+  }
+
+  @media (min-width: $desktop) {
   }
 }

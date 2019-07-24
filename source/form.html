@@ -12,7 +12,12 @@
     <header class="site-header">
       <div class="site-header__logobox">
         <a href="index.html" class="logotype">
-          <img src="img/logo-mobile.svg" alt="Cat Energy" class="logotype__image">
+          <picture class="logotype__image">
+            <source srcset="img/logo-mobile.svg" media="(max-width: 767px)">
+            <source srcset="img/logo-tablet.svg" media="(max-width: 1299px)">
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+            <img src="img/logo-desktop.svg" alt="Cat Energy">
+          </picture>
           <h1 class="visually-hidden"><strong>Cat</strong> Energy</h1>
         </a>
       </div>

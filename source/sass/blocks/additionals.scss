@@ -1,7 +1,5 @@
 .additionals {
-  @media (min-width: $tablet) {
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
 
   @media (min-width: $desktop) {
     padding-bottom: 85px;
@@ -12,11 +10,11 @@
   padding: 20px 0 20px 20px;
 
   @media (min-width: $tablet) {
-    padding: 30px 0 30px 30px;
+    padding: 15px 0 30px 30px;
   }
 
   @media (min-width: $desktop) {
-    padding: 40px 0 40px 40px;
+    padding: 25px 0 40px 44px;
 
     @include container;
   }

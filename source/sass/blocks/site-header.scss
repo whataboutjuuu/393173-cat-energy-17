@@ -15,6 +15,11 @@
     flex-wrap: nowrap;
     max-width: $desktop;
     margin: auto;
+    padding-top: 23px;
+
+    &--low {
+      padding-top: 0;
+    }
   }
 }
 
