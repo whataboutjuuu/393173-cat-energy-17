@@ -1,6 +1,6 @@
 var controls = document.querySelectorAll(".controlButton");
 var indicator = document.querySelector(".slider-indicator");
-var images = document.querySelectorAll(".cat-slider__image img");
+var images = document.querySelectorAll(".cat-slider__image picture");
 
 for (var i = 0; i < controls.length; i++) {
   controls[i].addEventListener("click", function (evt) {

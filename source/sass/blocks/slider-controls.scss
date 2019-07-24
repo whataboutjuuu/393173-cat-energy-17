@@ -9,6 +9,14 @@
   padding-left: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet) {
+    margin: 12px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 32px 0 0;
+  }
 }
 
 .slider-controls__item--indicator {
@@ -28,6 +36,7 @@
   @media (min-width: $tablet) {
     width: 425px;
     height: 6px;
+    margin: 0 24px;
     padding: 0;
 
     background-color: #dcdcdc;

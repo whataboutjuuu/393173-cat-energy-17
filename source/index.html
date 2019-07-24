@@ -115,8 +115,20 @@
 
         <div class="cat-slider">
           <div class="cat-slider__image">
-            <img src="img/before-mobile@1x.png" alt="Fat Cat">
-            <img src="img/after-mobile@1x.png" alt="Slim Cat" hidden>
+            <picture>
+              <source srcset="img/before-mobile@1x.png" media="(max-width: 767px)">
+              <source srcset="img/before-tablet@1x.png" media="(max-width: 1299px)">
+              <source srcset="img/before-desktop@1x.png" media="(min-width: 1300px)">
+              <img src="img/before-desktop@1x.png" alt="Fat Cat">
+            </picture>
+            <picture hidden>
+              <source srcset="img/after-mobile@1x.png" media="(max-width: 767px)">
+              <source srcset="img/after-tablet@1x.png" media="(max-width: 1299px)">
+              <source srcset="img/after-desktop@1x.png" media="(min-width: 1300px)">
+              <img src="img/after-desktop@1x.png" alt="Slim Cat">
+            </picture>
+            <!-- <img src="img/before-mobile@1x.png" alt="Fat Cat">
+            <img src="img/after-mobile@1x.png" alt="Slim Cat" hidden> -->
           </div>
           <ul class="cat-slider__controls slider-controls">
             <li class="slider-controls__item">
@@ -218,6 +230,6 @@
 
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
-    <div class="pixel"></div>
+
   </body>
 </html>

@@ -2,6 +2,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet) {
+    margin-top: -24px;
     padding: 0 30px;
   }
 
@@ -21,7 +22,8 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet) {
-    padding: 75px 50px 50px;
+    margin-bottom: 30px;
+    padding: 67px 52px 43px;
   }
 
   @media (min-width: $desktop) {
@@ -51,7 +53,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0 0 0 165px;
+    padding: 0 0 0 163px;
 
     font-size: 36px;
   }
@@ -68,8 +70,8 @@
     border-radius: 50%;
 
     @media (min-width: $tablet) {
-      top: 20px;
-      right: 0;
+      top: 25px;
+      right: 10px;
       left: auto;
 
       width: 200px;
@@ -105,21 +107,21 @@
     background-image: url("../img/icon-cat-slim.svg");
 
     @media (min-width: $tablet) {
-      top: 20px;
-      right: 7px;
+      top: 12px;
+      right: 40px;
       left: auto;
 
-      width: 148px;
-      height: 204px;
+      width: 140px;
+      height: 196px;
     }
 
     @media (min-width: $desktop) {
-      top: -32px;
+      top: -26px;
       right: auto;
-      left: 7px;
+      left: 13px;
 
-      width: 74px;
-      height: 102px;
+      width: 70px;
+      height: 98px;
     }
   }
 
@@ -144,10 +146,10 @@
     @media (min-width: $desktop) {
       top: -3px;
       right: auto;
-      left: -24px;
+      left: -16px;
 
-      width: 128px;
-      height: 56px;
+      width: 132px;
+      height: 60px;
     }
   }
 }
@@ -162,13 +164,16 @@
   color: $fontColor;
 
   @media (min-width: $tablet) {
+    margin-top: 16px;
     padding-right: 225px;
 
     font-size: 16px;
+    line-height: 1.5;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 50px;
+    margin-top: 65px;
+    margin-bottom: 11px;
     padding: 0;
   }
 }
@@ -187,9 +192,15 @@
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: $tablet) {
+    margin-top: 36px;
+
     font-size: 20px;
 
     border-top: none;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 
   &::after {
@@ -204,6 +215,11 @@
     vertical-align: top;
 
     background-image: url("../img/icon-right-arrow-long.svg");
+
+    @media (min-width: $tablet) {
+      margin-top: 5px;
+      margin-left: 23px;
+    }
   }
 
   &:hover,

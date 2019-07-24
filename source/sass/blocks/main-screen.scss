@@ -2,7 +2,7 @@
   position: relative;
 
   @media (min-width: $desktop) {
-    min-height: 582px;
+    min-height: 578px;
     margin-bottom: 80px;
 
     &::after {
@@ -28,13 +28,13 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    padding: 30px 110px;
+    padding: 30px 117px 0;
   }
 
   @media (min-width: $desktop) {
     max-width: $desktop;
     margin: auto;
-    padding-top: 130px;
+    padding-top: 104px;
   }
 }
 
@@ -70,25 +70,29 @@
   font-size: 36px;
   line-height: 1;
 
-  @media (min-width: $desktop) {
-    margin-bottom: 40px;
+  @media (min-width: $tablet) {
+    margin-bottom: 42px;
 
     font-size: 60px;
   }
 }
 
 .main-screen__heading h3 {
-  margin: 25px 0;
+  margin: 25px 0 50px;
 
   font-weight: normal;
   font-size: $fontSize;
   line-height: 1;
   text-transform: uppercase;
 
-  @media (min-width: $desktop) {
-    margin-bottom: 40px;
+  @media (min-width: $tablet) {
+    margin-bottom: 47px;
 
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 52px;
   }
 }
 
@@ -99,13 +103,17 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    position: relative;
+    z-index: -1;
+
     order: 3;
-    margin: 0 auto;
+    margin: -80px -87px 0;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
-    right: 25%;
+    right: 29%;
+    z-index: 0;
   }
 }
 
