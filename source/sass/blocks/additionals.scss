@@ -7,10 +7,16 @@
 }
 
 .additionals__title {
-  padding: 20px 0 20px 20px;
+  padding: 28px 0 30px 20px;
+
+  white-space: nowrap;
+
+  .subtitle__text {
+    max-width: initial;
+  }
 
   @media (min-width: $tablet) {
-    padding: 15px 0 30px 30px;
+    padding: 20px 0 78px 28px;
   }
 
   @media (min-width: $desktop) {
@@ -35,7 +41,7 @@
 }
 
 .additionals__gift {
-  padding: 40px 20px 35px;
+  padding: 39px 20px 35px;
 
   @media (min-width: $tablet) {
     padding: 70px 30px 75px;

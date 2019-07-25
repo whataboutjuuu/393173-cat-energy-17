@@ -4,8 +4,6 @@
 
   list-style: none;
 
-  border-top: 1px solid #cdcdcd;
-
   @media (min-width: $tablet) {
     padding: 0 30px;
 
@@ -18,13 +16,19 @@
 }
 
 .supplementary__item {
-  padding: 15px 0;
+  padding: 14px 0 17px;
 
   border-bottom: 1px solid #cdcdcd;
 
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
   @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: -1px;
-    padding: 20px 37px;
+    padding: 26px 38px 27px;
 
     border: 1px solid #d9d9d9;
   }
@@ -39,11 +43,19 @@
     border-right: none;
     border-left: none;
   }
+
+  .button {
+    font-size: 16px;
+
+    @media (min-width: $tablet) {
+      height: 40px;
+    }
+  }
 }
 
 .supplementary__title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 
   font-weight: normal;
   font-size: 16px;
@@ -52,8 +64,15 @@
   color: #222222;
   text-transform: uppercase;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     flex-shrink: 0;
+    flex-basis: 400px;
+    margin-bottom: 25px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
     flex-basis: 325px;
   }
 }
@@ -61,12 +80,21 @@
 .supplementary__costs {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 
   font-size: $fontSize;
   line-height: 1;
   font-family: $fontFamily;
   color: $fontColor;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-basis: 225px;
+    align-self: center;
+    margin-left: auto;
+
+    font-size: 16px;
+  }
 
   @media (min-width: $desktop) {
     flex-shrink: 0;
