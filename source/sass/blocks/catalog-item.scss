@@ -7,8 +7,6 @@
   border: 1px solid #ededed;
 
   @media (min-width: $tablet) {
-    // flex-direction: column;
-    // flex-wrap: nowrap;
     display: block;
     margin-top: 90px;
     margin-bottom: 50px;
@@ -69,8 +67,5 @@
     .button {
       height: 40px;
     }
-  }
-
-  @media (min-width: $desktop) {
   }
 }
