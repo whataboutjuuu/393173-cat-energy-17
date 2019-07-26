@@ -2,6 +2,7 @@
   position: relative;
 
   width: 100%;
+
   @media (max-width: $tablet - 1) {
     &--hidden {
       .icon-open-menu {
