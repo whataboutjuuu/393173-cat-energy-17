@@ -135,12 +135,12 @@
     background-image: url("../img/icon-cat-pro.svg");
 
     @media (min-width: $tablet) {
-      top: 65px;
-      right: -8px;
+      top: 62px;
+      right: -24px;
       left: auto;
 
-      width: 256px;
-      height: 112px;
+      width: 268px;
+      height: 124px;
     }
 
     @media (min-width: $desktop) {
@@ -154,7 +154,7 @@
   }
 }
 
-.program__item p {
+.program__text {
   margin-top: 29px;
   margin-bottom: 22px;
 
@@ -175,6 +175,16 @@
     margin-top: 65px;
     margin-bottom: 11px;
     padding: 0;
+  }
+
+  &--pro {
+    @media (min-width: $tablet) {
+      padding-right: 260px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-right: 0;
+    }
   }
 }
 

@@ -27,6 +27,10 @@
     @media (min-width: $tablet) {
       margin: 1px 91px;
     }
+
+    @media (min-width: $desktop) {
+      margin: 0 auto;
+    }
   }
 
   @media (min-width: $tablet) {
@@ -63,6 +67,7 @@
 
   @media (min-width: $desktop) {
     width: 100%;
+    margin: -1px auto 0;
 
     text-align: center;
   }

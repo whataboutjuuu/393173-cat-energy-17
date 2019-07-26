@@ -5,6 +5,10 @@
     padding-bottom: 72px;
     overflow-x: hidden;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 81px;
+  }
 }
 
 .form__title {
@@ -32,7 +36,7 @@
 
     @include container;
 
-    div {
+    .form__title-wrap {
       max-width: 345px;
     }
   }
@@ -91,6 +95,7 @@
 
 .form__subtitle {
   padding: 8px 20px 0;
+  overflow-x: hidden;
 
   @media (min-width: $tablet) {
     padding: 30px;
@@ -154,8 +159,14 @@
 
     .checkbox {
       flex-basis: 25%;
-      padding-right: 40px;
-      padding-left: 40px;
+
+      &:nth-child(odd) {
+        padding-right: 40px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 40px;
+      }
     }
   }
 }
@@ -178,7 +189,9 @@
 
   @media (min-width: $desktop) {
     margin-top: 20px;
+    margin-right: 0;
     margin-bottom: 20px;
+    margin-left: 80px;
   }
 }
 
@@ -284,6 +297,10 @@
 
       font-size: 20px;
     }
+
+    @media (min-width: $desktop) {
+      margin-right: 40px;
+    }
   }
 
   @media (min-width: $tablet) {
@@ -307,7 +324,6 @@
   text-align: center;
   color: $fontColor;
 
-
   @media (min-width: $tablet) {
     flex-shrink: 0;
     flex-basis: 50%;
@@ -316,6 +332,10 @@
 
     font-size: 16px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 40px;
   }
 }
 
@@ -336,9 +356,9 @@
 
     @include container;
 
-    > div {
+    > .form__row-item {
       flex-shrink: 0;
-      flex-basis: 50%;
+      flex-basis: calc(50% - 40px);
     }
 
     &--contacts {

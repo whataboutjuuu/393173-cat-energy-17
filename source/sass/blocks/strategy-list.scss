@@ -33,12 +33,12 @@
   @media (min-width: $tablet) {
     display: inline-block;
     width: 50%;
-    margin: 48px 0 64px;
+    margin: 46px 0 64px;
     padding: 0;
 
     font-size: 16px;
 
-    p {
+    .strategy-list__text {
       max-width: 245px;
       margin-top: 37px;
 
@@ -56,6 +56,10 @@
 
   @media (min-width: $desktop) {
     margin: 0 40px 70px;
+
+    .strategy-list__text {
+      margin-top: 35px;
+    }
 
     &:nth-child(odd) {
       padding-right: 0;
@@ -105,11 +109,43 @@
 
       counter-increment: strategyCounter;
     }
+
+    &--nutrition::after {
+      right: 125px;
+    }
+
+    &--powder::after {
+      right: 80px;
+    }
+
+    &--replacement::after {
+      right: 107px;
+    }
+
+    &--changes::after {
+      right: 77px;
+    }
   }
 
   @media (min-width: $desktop) {
     &::after {
       right: 0;
+    }
+
+    &--nutrition::after {
+      right: 16px;
+    }
+
+    &--powder::after {
+      right: 1px;
+    }
+
+    &--replacement::after {
+      right: -2px;
+    }
+
+    &--changes::after {
+      right: -5px;
     }
   }
 

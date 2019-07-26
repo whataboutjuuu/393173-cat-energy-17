@@ -8,12 +8,12 @@
     &::after {
       content: "";
       position: absolute;
-      top: -115px;
+      top: -119px;
       right: 0;
       z-index: -1;
 
       width: 50%;
-      height: calc(100% + 115px);
+      height: calc(100% + 118px);
 
       background-color: #65a93c;
       background-image: url("../img/index-background-desktop@1x.jpg");
@@ -60,6 +60,10 @@
     color: $titleColor;
 
     background: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 3px;
   }
 }
 
@@ -125,5 +129,10 @@
     order: 2;
     width: 250px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 243px;
+    margin-left: 3px;
   }
 }

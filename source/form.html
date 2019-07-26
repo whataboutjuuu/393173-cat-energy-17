@@ -23,7 +23,7 @@
       </div>
 
       <div class="site-header__navigation">
-        <nav class="main-menu">
+        <nav class="main-menu main-menu--hidden main-menu--nojs">
           <button class="main-menu__toggle" type="button">
             <img src="img/icon-mobile-menu.svg" alt="Значок открыть меню" class="icon-open-menu">
             <img src="img/icon-close.svg" alt="Значок закрыть меню" class="icon-close-menu">
@@ -46,10 +46,12 @@
     <main class="site-main">
       <h2 class="site-main__title">Подбор программы</h2>
       <form class="form" action="https://echo.htmlacademy.ru">
-        <h3 class="form__title"><div>Заполните анкету и мы подберем программу питания для вашего кота</div></h3>
+        <h3 class="form__title">
+          <div class="form__title-wrap">Заполните анкету и мы подберем программу питания для вашего кота</div>
+        </h3>
         <div class="form__box">
           <div class="form__row">
-            <div class="">
+            <div class="form__row-item">
               <fieldset class="form__group form__group--required">
                 <label class="form__label" for="name">Имя:*
                   <input class="form__input" type="text" id="name" name="name" placeholder="Барсик">
@@ -66,7 +68,7 @@
                 </label>
               </fieldset>
             </div>
-            <div class="form__radiogroup">
+            <div class="form__row-item form__radiogroup">
               <div class="radio">
                 <label>
                   <input type="radio" name="program" value="slim" checked>
@@ -171,7 +173,11 @@
         <h3 class="dealers__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
         <address class="dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6510143597299!2d30.322520829293133!3d59.938711998867255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjQiTiAzMMKwMTknMjMuMCJF!5e0!3m2!1sru!2sua!4v1564159456536!5m2!1sru!2sua"
+          width="600" height="250" allowfullscreen></iframe>
+      </div>
     </div>
 
     <footer class="site-footer">
@@ -264,7 +270,5 @@
     </svg>
 
     <script src="js/menu.js"></script>
-
-    <div class="pixel"></div>
   </body>
 </html>

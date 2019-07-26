@@ -13,6 +13,10 @@
 
   .subtitle__text {
     max-width: initial;
+
+    @media (min-width: $desktop) {
+      padding-left: 35px;
+    }
   }
 
   @media (min-width: $tablet) {
@@ -20,7 +24,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 25px 0 40px 44px;
+    padding: 43px 0 78px 44px;
 
     @include container;
   }

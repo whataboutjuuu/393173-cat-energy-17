@@ -13,6 +13,11 @@
 
     border: 1px solid #e6e6e6;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 111px;
+    margin-bottom: 30px;
+  }
 }
 
 .more-item__text {
@@ -42,10 +47,11 @@
     }
   }
 
-  p {
+  h6 {
     margin-top: 10px;
     margin-bottom: 20px;
 
+    font-weight: normal;
     font-size: 12px;
     line-height: 1.333;
     font-family: $fontFamily;
@@ -78,7 +84,6 @@
     }
   }
 }
-
 
 .more-item__action {
   @media (min-width: $tablet) {

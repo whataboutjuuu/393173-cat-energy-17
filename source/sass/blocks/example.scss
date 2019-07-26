@@ -73,6 +73,7 @@
   color: $fontColor;
 
   @media (min-width: $tablet) {
+    max-width: 100%;
     margin: 40px 0 43px;
     padding: 0 30px;
 
@@ -121,9 +122,11 @@
   }
 
   @media (min-width: $desktop) {
+    display: flex;
     flex-basis: 100%;
+    justify-content: space-between;
     width: 100%;
-    max-width: 340px;
+    max-width: 327px;
     margin-left: 0;
     padding-top: 51px;
 
