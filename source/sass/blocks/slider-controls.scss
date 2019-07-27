@@ -5,19 +5,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 25px 0 0;
   padding-left: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet) {
+    margin: 12px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 32px 0 0;
+  }
 }
 
 .slider-controls__item--indicator {
   position: relative;
 
   width: 86px;
-  height: 16px;
-  margin: 0 10px;
-  padding: 4px 5px;
+  height: 14px;
+  margin: 0 15px;
+  padding: 3px 5px;
 
   background-color: #ffffff;
   border-width: 1px;
@@ -28,6 +36,7 @@
   @media (min-width: $tablet) {
     width: 425px;
     height: 6px;
+    margin: 0 24px;
     padding: 0;
 
     background-color: #dcdcdc;
@@ -88,7 +97,7 @@
   }
 }
 
-.slider-controls__item button {
+.slider-controls__button {
   padding: 0;
 
   font-size: 16px;

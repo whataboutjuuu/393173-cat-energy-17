@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0;
+  padding: 15px 0;
 
   font-size: 16px;
   line-height: 1;
@@ -13,16 +13,14 @@
 }
 
 .academy-logo__image {
-  width: 27px;
-  height: 34px;
+  width: 41px;
+  height: 48px;
+  margin-right: -7px;
 
   color: #666666;
 
-  svg {
-    width: 100%;
-    height: 100%;
-
-    fill: currentColor;
+  @media (min-width: $tablet) {
+    margin-left: 16px;
   }
 }
 

@@ -12,7 +12,7 @@
     content: "";
     position: absolute;
     top: $fontSize;
-    right: -20px;
+    right: auto;
 
     width: 150%;
     height: 3px;
@@ -70,8 +70,8 @@
 
   @media (min-width: $tablet) {
     max-width: none;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 42px;
+    padding-left: 39px;
 
     font-size: 36px;
   }

@@ -9,8 +9,8 @@
 .contacts__address {
   @media (min-width: $desktop) {
     position: absolute;
-    top: 100px;
-    left: calc((100% - 1300px) / 2 + 30px);
+    top: 94px;
+    left: calc((100% - 1300px) / 2 + 40px);
     z-index: 1;
   }
 }
@@ -19,7 +19,7 @@
   position: relative;
 
   max-width: 100%;
-  height: 360px;
+  height: 362px;
 
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
@@ -33,9 +33,18 @@
   }
 
   @media (min-width: $desktop) {
-    height: 400px;
-
     background-image: url("../img/bg-map-desktop@1x.png");
+  }
+
+  iframe {
+    width: 100%;
+    height: 362px;
+
+    border: 0;
+
+    @media (min-width: $tablet) {
+      height: 400px;
+    }
   }
 
   &::after {

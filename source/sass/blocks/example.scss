@@ -1,5 +1,5 @@
 .example {
-  padding: 0 20px 40px;
+  padding: 17px 20px 34px;
 
   background-color: #f2f2f2;
 
@@ -13,11 +13,10 @@
   }
 
   @media (min-width: $desktop) {
-    // margin-top: 120px;
-    padding-bottom: 65px;
+    padding-bottom: 44px;
 
     background: rgb(255, 255, 255);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(242, 242, 242, 1) 25%, rgba(242, 242, 242, 1) 100%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 27%, rgba(242, 242, 242, 1) 27%, rgba(242, 242, 242, 1) 100%);
     border-top: none;
   }
 }
@@ -37,7 +36,7 @@
 }
 
 .example__title {
-  margin: 20px 0;
+  margin: 0 0 23px;
 
   font-weight: normal;
   font-size: 36px;
@@ -46,7 +45,7 @@
   color: $titleColor;
 
   @media (min-width: $tablet) {
-    margin: 40px 0;
+    margin: 23px 0 45px;
     padding: 0 30px;
 
     font-size: 60px;
@@ -54,6 +53,8 @@
 
   @media (min-width: $desktop) {
     flex-basis: 100%;
+    margin: 19px 0 86px;
+    padding: 0 40px;
   }
 }
 
@@ -62,6 +63,9 @@
 }
 
 .example__description {
+  max-width: 270px;
+  margin-bottom: 25px;
+
   font-size: $fontSize;
   line-height: 1.286;
   font-family: $fontFamily;
@@ -69,15 +73,23 @@
   color: $fontColor;
 
   @media (min-width: $tablet) {
-    margin: 40px 0;
+    max-width: 100%;
+    margin: 40px 0 43px;
     padding: 0 30px;
 
     font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 515px;
+    margin-bottom: 74px;
+    padding: 0 40px;
   }
 }
 
 .example__statistics {
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -87,11 +99,12 @@
 
   @media (min-width: $desktop) {
     flex-wrap: wrap;
+    padding: 0 40px;
   }
 }
 
 .example__cost {
-  padding: 10px 0;
+  padding: 20px 0;
 
   font-size: $fontSize;
   line-height: 1.429;
@@ -102,14 +115,20 @@
   @media (min-width: $tablet) {
     flex-basis: 190px;
     margin-left: auto;
+    padding: 17px 0 27px;
 
     font-size: 20px;
     text-align: right;
   }
 
   @media (min-width: $desktop) {
+    display: flex;
     flex-basis: 100%;
+    justify-content: space-between;
     width: 100%;
+    max-width: 327px;
+    margin-left: 0;
+    padding-top: 51px;
 
     text-align: left;
   }

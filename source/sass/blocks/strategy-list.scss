@@ -20,8 +20,8 @@
   position: relative;
 
   min-height: 60px;
-  margin: 10px 0;
-  padding: 0 0 0 70px;
+  margin: 12px 0 20px;
+  padding: 0 0 0 80px;
 
   font-size: $fontSize;
   line-height: 1.286;
@@ -33,19 +33,41 @@
   @media (min-width: $tablet) {
     display: inline-block;
     width: 50%;
-    margin: 0 0 70px;
+    margin: 46px 0 64px;
     padding: 0;
 
     font-size: 16px;
 
-    p {
-      max-width: 215px;
+    .strategy-list__text {
+      max-width: 245px;
+      margin-top: 37px;
+
+      line-height: 1.5;
+    }
+
+    &:nth-child(odd) {
+      padding-right: 30px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 30px;
     }
   }
 
-
   @media (min-width: $desktop) {
     margin: 0 40px 70px;
+
+    .strategy-list__text {
+      margin-top: 35px;
+    }
+
+    &:nth-child(odd) {
+      padding-right: 0;
+    }
+
+    &:nth-child(even) {
+      padding-left: 0;
+    }
   }
 
   &::before {
@@ -63,7 +85,7 @@
 
     @media (min-width: $tablet) {
       position: relative;
-      top: 0;
+      top: 4px;
 
       display: block;
       width: 80px;
@@ -77,7 +99,7 @@
       content: counter(strategyCounter);
       position: absolute;
       top: -35px;
-      right: 135px;
+      right: 70px;
       z-index: -1;
 
       font-size: 281px;
@@ -87,11 +109,43 @@
 
       counter-increment: strategyCounter;
     }
+
+    &--nutrition::after {
+      right: 125px;
+    }
+
+    &--powder::after {
+      right: 80px;
+    }
+
+    &--replacement::after {
+      right: 107px;
+    }
+
+    &--changes::after {
+      right: 77px;
+    }
   }
 
   @media (min-width: $desktop) {
     &::after {
       right: 0;
+    }
+
+    &--nutrition::after {
+      right: 16px;
+    }
+
+    &--powder::after {
+      right: 1px;
+    }
+
+    &--replacement::after {
+      right: -2px;
+    }
+
+    &--changes::after {
+      right: -5px;
     }
   }
 

@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet) {
     flex-basis: 370px;
+    margin-top: -5px;
   }
 
   @media (min-width: $desktop) {
@@ -25,11 +26,23 @@
   &:last-child {
     margin-left: 16px;
   }
+
+  @media (min-width: $tablet) {
+    width: 162px;
+
+    &:first-child {
+      margin-right: 21px;
+    }
+
+    &:last-child {
+      margin-left: 21px;
+    }
+  }
 }
 
 .stats__counter {
   min-width: 90px;
-  padding: 12px 10px 16px;
+  padding: 13px 10px 17px;
 
   font-size: 24px;
   line-height: 1;
@@ -44,7 +57,7 @@
   border-radius: 3px;
 
   @media (min-width: $tablet) {
-    padding: 21px 10px 20px;
+    padding: 19px 10px 20px;
 
     font-size: 30px;
   }

@@ -1,5 +1,11 @@
 .catalog {
+  @media (min-width: $tablet) {
+    margin-top: 14px;
+  }
+
   @media (min-width: $desktop) {
+    margin-top: 17px;
+
     @include container;
   }
 }

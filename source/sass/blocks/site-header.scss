@@ -15,28 +15,29 @@
     flex-wrap: nowrap;
     max-width: $desktop;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 23px;
   }
 }
 
 .site-header__logobox {
-  width: 74%;
+  width: 72%;
   height: 65px;
-  padding: 0 20px;
+  padding: 13px 20px;
 
   a {
     display: block;
   }
 
   @media (min-width: $tablet) {
-    flex-basis: 195px;
+    flex-basis: 233px;
     align-self: center;
     height: auto;
-    padding: 0 30px;
+    padding: 24px 30px;
   }
 
   @media (min-width: $desktop) {
-    padding: 0 40px;
+    flex-basis: 282px;
+    padding: 30px 40px 0;
   }
 }
 

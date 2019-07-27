@@ -16,13 +16,21 @@
 
     display: block;
     width: 55px;
-    height: 62%;
+    height: 55px;
     margin: auto;
-    padding: 60px 0;
+    padding: 94px 0;
 
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet) {
+      margin: 1px 91px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0 auto;
+    }
   }
 
   @media (min-width: $tablet) {
@@ -51,11 +59,15 @@
   color: rgb(255, 255, 255);
 
   @media (min-width: $tablet) {
+    max-width: 161px;
+    margin: auto 126px auto auto;
+
     text-align: left;
   }
 
   @media (min-width: $desktop) {
     width: 100%;
+    margin: -1px auto 0;
 
     text-align: center;
   }

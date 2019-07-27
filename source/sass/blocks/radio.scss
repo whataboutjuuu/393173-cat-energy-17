@@ -4,7 +4,8 @@ $input-bg-disabled: #e5e5e5;
 $input-color: $accentColor;
 
 .radio {
-  padding: 10px 0;
+  margin-top: -2px;
+  padding: 7px 0;
 }
 
 .radio .jlabel {
@@ -13,7 +14,7 @@ $input-color: $accentColor;
   display: flex;
   align-items: center;
   min-height: 30px;
-  padding-left: 50px;
+  padding-left: 46px;
 
   font-size: 16px;
   color: $fontColor;
@@ -21,6 +22,7 @@ $input-color: $accentColor;
 
   @media (min-width: $tablet) {
     min-height: 40px;
+    padding-left: 60px;
 
     font-size: 20px;
   }

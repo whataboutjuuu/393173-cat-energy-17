@@ -1,12 +1,22 @@
 .more-item {
-  padding: 20px;
+  padding: 25px 20px 24px;
 
   text-align: center;
 
+  border: 1px solid #ededed;
+
   @media (min-width: $tablet) {
-    margin-top: 70px;
+    margin-top: 97px;
+    margin-bottom: 44px;
+    padding: 20px 20px 40px;
+    padding-top: 54px;
 
     border: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 111px;
+    margin-bottom: 30px;
   }
 }
 
@@ -19,6 +29,7 @@
   }
 
   h5 {
+    margin-top: 23px;
     margin-bottom: 0;
 
     font-weight: normal;
@@ -28,17 +39,28 @@
     text-transform: uppercase;
 
     @media (min-width: $tablet) {
+      max-width: 150px;
+      margin: 49px auto 0;
+
       font-size: 20px;
+      line-height: 1;
     }
   }
 
-  p {
+  h6 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    font-weight: normal;
     font-size: 12px;
     line-height: 1.333;
     font-family: $fontFamily;
     color: $fontColor;
 
     @media (min-width: $tablet) {
+      margin-top: 24px;
+      margin-bottom: 82px;
+
       font-size: 16px;
     }
   }
@@ -60,5 +82,19 @@
       width: 60px;
       height: 60px;
     }
+  }
+}
+
+.more-item__action {
+  @media (min-width: $tablet) {
+    padding: 0 17px;
+  }
+}
+
+.more-item__action .button {
+  font-size: 16px;
+
+  @media (min-width: $tablet) {
+    height: 40px;
   }
 }

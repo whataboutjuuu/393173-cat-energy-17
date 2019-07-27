@@ -4,7 +4,7 @@
 
 .site-main__title {
   margin: 0;
-  padding: 21px 20px;
+  padding: 13px 20px 30px;
 
   font-weight: normal;
   font-size: 36px;
@@ -13,13 +13,13 @@
   color: #111111;
 
   @media (min-width: $tablet) {
-    padding: 50px 30px;
+    padding: 10px 30px 35px;
 
     font-size: 60px;
   }
 
   @media (min-width: $desktop) {
-    padding: 50px 40px;
+    padding: 50px 40px 34px;
 
     @include container;
   }
