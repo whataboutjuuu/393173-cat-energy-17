@@ -1,14 +1,17 @@
+.logotype {
+  transition: opacity 0.35s ease-in-out;
 
-.logotype:not(a) {
-  opacity: 1;
+  &:not(a) {
+    opacity: 1;
 
-  pointer-events: none;
-}
+    pointer-events: none;
+  }
 
-.logotype:hover {
-  opacity: 0.8;
-}
+  &:hover {
+    opacity: 0.8;
+  }
 
-.logotype:active {
-  opacity: 0.6;
+  &:active {
+    opacity: 0.6;
+  }
 }

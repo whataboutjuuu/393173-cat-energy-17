@@ -17,7 +17,9 @@
   height: 48px;
   margin-right: -7px;
 
-  color: #666666;
+  transition: fill 0.35s ease-in-out;
+
+  fill: #444444;
 
   @media (min-width: $tablet) {
     margin-left: 16px;
@@ -26,9 +28,9 @@
 
 .academy-logo:hover .academy-logo__image,
 .academy-logo:active .academy-logo__image {
-  color: $accentColor;
+  fill: $accentColor;
 }
 
-.academy-logo:active .academy-logo__image {
+.academy-logo:active {
   opacity: 0.3;
 }

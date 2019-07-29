@@ -233,6 +233,7 @@
   }
 
   &:hover,
+  &:focus,
   &:active {
     &::after {
       width: 32px;

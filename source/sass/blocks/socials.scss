@@ -20,6 +20,8 @@
 
   color: #666666;
 
+  transition: color 0.35s ease-in-out;
+
   @media (min-width: $tablet) {
     padding: 8px;
   }
