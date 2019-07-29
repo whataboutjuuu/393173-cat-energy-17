@@ -23,7 +23,11 @@
   transition: color 0.35s ease-in-out;
 
   @media (min-width: $tablet) {
-    padding: 8px;
+    padding: 8px 8px 8px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 4px 10px 10px 0;
   }
 
   svg {
@@ -40,5 +44,29 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--instagram {
+    padding: 12px 13px 13px;
+
+    @media (min-width: $tablet) {
+      padding: 12px 8px 9px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 7px 7px 12px;
+    }
+  }
+
+  &--vk {
+    padding: 12px 13px 12px 5px;
+
+    @media (min-width: $tablet) {
+      padding: 12px 9px 12px 5px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 6px;
+    }
   }
 }

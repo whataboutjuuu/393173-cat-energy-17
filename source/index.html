@@ -82,7 +82,7 @@
           <p class="strategy-list__text">Замените один-два приёма обычной еды на наше функциональное питание.</p>
         </li>
         <li class="strategy-list__item strategy-list__item--changes">
-          <p class="strategy-list__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="strategy-list__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
         </li>
       </ol>
     </div>
@@ -150,8 +150,19 @@
           Санкт-Петербург</span></address>
       </div>
       <div class="contacts__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6510143597299!2d30.322520829293133!3d59.938711998867255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjQiTiAzMMKwMTknMjMuMCJF!5e0!3m2!1sru!2sua!4v1564159456536!5m2!1sru!2sua"
-          width="600" height="250" allowfullscreen></iframe>
+        <div id="map"></div>
+        <script>
+          var map;
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: { lat: -34.397, lng: 150.644 },
+              zoom: 8
+            });
+          }
+        </script>
+
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6510143597299!2d30.322520829293133!3d59.938711998867255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjQiTiAzMMKwMTknMjMuMCJF!5e0!3m2!1sru!2sua!4v1564159456536!5m2!1sru!2sua"
+          width="600" height="250" allowfullscreen></iframe> -->
       </div>
     </div>
 
@@ -232,5 +243,10 @@
 
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrDfKn6wdTUS7pEEQ3rG45knCJMxqrOog&callback=initMap" async
+      defer></script>
+
+
+    <!-- <div class="pixel"></div> -->
   </body>
 </html>
