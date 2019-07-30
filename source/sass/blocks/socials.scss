@@ -23,7 +23,7 @@
   transition: color 0.35s ease-in-out;
 
   @media (min-width: $tablet) {
-    padding: 8px 8px 8px 0;
+    padding: 9px 10px 5px 0;
   }
 
   @media (min-width: $desktop) {
@@ -50,7 +50,7 @@
     padding: 12px 13px 13px;
 
     @media (min-width: $tablet) {
-      padding: 9px 10px 9px 9px;
+      padding: 12px 11px 7px 8px;
     }
 
     @media (min-width: $desktop) {
@@ -62,7 +62,7 @@
     padding: 12px 13px 12px 5px;
 
     @media (min-width: $tablet) {
-      padding: 12px 9px 12px 5px;
+      padding: 12px 10px 14px 2px;
     }
 
     @media (min-width: $desktop) {

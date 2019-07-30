@@ -10,6 +10,10 @@
   text-align: left;
   color: $fontColor;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    padding-top: 19px;
+  }
 }
 
 .academy-logo__image {
