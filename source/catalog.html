@@ -326,9 +326,47 @@
           Санкт-Петербург</span></address>
       </div>
       <div class="contacts__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6510143597299!2d30.322520829293133!3d59.938711998867255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjQiTiAzMMKwMTknMjMuMCJF!5e0!3m2!1sru!2sua!4v1564159456536!5m2!1sru!2sua"
-          width="600" height="250" allowfullscreen></iframe>
+        <div class="google-map"></div>
+        <script>
+          var map;
+
+          function initMap() {
+            var wW = document.documentElement.clientWidth;
+            var LAT = 59.938697;
+            var LNG = 30.323031;
+            var coordLatCenter = 59.938693;
+            var coordLngCenter = 30.323010;
+            var scaledSizeW = 62;
+            var scaledSizeH = 53;
+            var zoom = 18;
+
+            var coordsCenter = { lat: coordLatCenter, lng: coordLngCenter };
+
+            if (wW >= 768) {
+              scaledSizeW = 124;
+              scaledSizeH = 106;
+            }
+
+            if (wW >= 1300) {
+              coordsCenter = { lat: 59.938987, lng: 30.3193361 };
+              zoom = 17;
+            }
+
+            map = new google.maps.Map(document.querySelector(".google-map"), {
+              center: coordsCenter,
+              zoom: zoom
+            });
+
+            var marker = new google.maps.Marker({
+              position: { lat: LAT, lng: LNG },
+              icon: {
+                url: 'img/map-pin.png',
+                scaledSize: new google.maps.Size(scaledSizeW, scaledSizeH)
+              },
+              map: map
+            });
+          }
+        </script>
       </div>
     </div>
 
@@ -411,5 +449,6 @@
     </svg>
 
     <script src="js/menu.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrDfKn6wdTUS7pEEQ3rG45knCJMxqrOog&callback=initMap" async defer></script>
   </body>
 </html>
