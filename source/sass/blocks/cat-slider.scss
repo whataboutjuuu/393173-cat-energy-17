@@ -2,7 +2,7 @@
   @media (min-width: $tablet) {
     position: relative;
 
-    padding: 67px 0 71px;
+    padding: 67px 0 68px;
 
     &::before {
       content: "";
@@ -21,6 +21,7 @@
     flex-basis: 50%;
     margin-top: -220px;
     padding: 0;
+    overflow-x: hidden;
   }
 }
 
@@ -30,10 +31,9 @@
 
   text-align: center;
 
-
   @media (min-width: $tablet) {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 20px;
+    margin-left: 30px;
   }
 
   @media (min-width: $desktop) {

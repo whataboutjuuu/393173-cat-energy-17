@@ -47,20 +47,20 @@
     }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 53px);
-    left: calc(50% - 62px);
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: calc(50% - 53px);
+  //   left: calc(50% - 62px);
 
-    display: block;
-    width: 124px;
-    height: 106px;
+  //   display: block;
+  //   width: 124px;
+  //   height: 106px;
 
-    background-image: url("../img/map-pin.png");
+  //   background-image: url("../img/map-pin.png");
 
-    @media (min-width: $desktop) {
-      left: calc(75% - 62px);
-    }
-  }
+  //   @media (min-width: $desktop) {
+  //     left: calc(75% - 62px);
+  //   }
+  // }
 }

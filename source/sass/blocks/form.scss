@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 81px;
+    padding-bottom: 82px;
   }
 }
 
@@ -103,6 +103,7 @@
 
   @media (min-width: $desktop) {
     padding: 0 40px;
+    overflow-x: visible;
 
     @include container;
   }
@@ -251,17 +252,17 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: #cdcdcd;
     outline: none;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     border-color: #444444;
     outline: 1px solid #444444;
 
-    .form__input-icon {
+    & + .form__input-icon {
       fill: $accentColor;
     }
   }
