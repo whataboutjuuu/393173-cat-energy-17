@@ -21,3 +21,10 @@ html {
 *::after {
   box-sizing: border-box;
 }
+
+[disabled] {
+  cursor: default;
+  opacity: 0.7;
+
+  pointer-events: none;
+}

@@ -35,10 +35,14 @@
     padding: 0 40px;
 
     @include container;
+  }
+}
 
-    .form__title-wrap {
-      max-width: 345px;
-    }
+.form__title-wrap {
+  display: block;
+
+  @media (min-width: $desktop) {
+    max-width: 345px;
   }
 }
 
@@ -141,6 +145,7 @@
 
     .checkbox {
       flex-basis: 50%;
+      max-width: 50%;
 
       &:nth-child(odd) {
         padding-right: 30px;
@@ -160,6 +165,7 @@
 
     .checkbox {
       flex-basis: 25%;
+      max-width: 25%;
 
       &:nth-child(odd) {
         padding-right: 40px;
