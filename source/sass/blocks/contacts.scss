@@ -26,14 +26,29 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet) {
     height: 400px;
 
     background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 767px auto;
+    }
   }
 
   @media (min-width: $desktop) {
     background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 1440px auto;
+    }
   }
 
   iframe {
@@ -46,21 +61,4 @@
       height: 400px;
     }
   }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: calc(50% - 53px);
-  //   left: calc(50% - 62px);
-
-  //   display: block;
-  //   width: 124px;
-  //   height: 106px;
-
-  //   background-image: url("../img/map-pin.png");
-
-  //   @media (min-width: $desktop) {
-  //     left: calc(75% - 62px);
-  //   }
-  // }
 }

@@ -30,6 +30,8 @@
 }
 
 .main-screen__wrapper {
+  position: relative;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
@@ -92,7 +94,7 @@
 }
 
 .main-screen__heading h3 {
-  margin: 25px 0 50px;
+  margin: 25px 0 0;
 
   font-weight: normal;
   font-size: $fontSize;
@@ -112,7 +114,7 @@
 
 .main-screen__image {
   display: block;
-  margin: -189px auto -2px;
+  margin: -139px auto -2px;
 
   text-align: center;
 
@@ -121,6 +123,7 @@
     z-index: -1;
 
     order: 3;
+    height: auto;
     margin: -80px -87px 0;
   }
 

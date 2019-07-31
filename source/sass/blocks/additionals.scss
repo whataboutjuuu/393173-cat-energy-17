@@ -12,7 +12,7 @@
   white-space: nowrap;
 
   .subtitle__text {
-    max-width: initial;
+    max-width: none;
 
     @media (min-width: $desktop) {
       padding-left: 35px;

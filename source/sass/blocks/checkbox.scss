@@ -20,6 +20,7 @@ $input-color: $accentColor;
   padding-left: 46px;
 
   font-size: 16px;
+  line-height: 30px;
   vertical-align: middle;
   color: $fontColor;
   text-transform: uppercase;
@@ -29,6 +30,7 @@ $input-color: $accentColor;
     padding-left: 58px;
 
     font-size: 20px;
+    line-height: 40px;
   }
 
   &::before {
