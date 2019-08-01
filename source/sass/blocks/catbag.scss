@@ -74,6 +74,8 @@
   color: rgb(255, 255, 255);
 
   @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
     max-width: 161px;
     margin: auto 126px auto auto;
 
