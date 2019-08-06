@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="site-header">
@@ -41,7 +41,7 @@
           <h2>Функциональное питание для котов</h2>
           <h3>Занялся собой? Займись котом!</h3>
         </div>
-        <picture  class="main-screen__image">
+        <picture class="main-screen__image">
           <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
@@ -118,8 +118,7 @@
           <h2 class="visually-hidden">Демонстрация изменений фигуры кота</h2>
           <div class="cat-slider__image">
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
@@ -128,11 +127,9 @@
               <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Fat Cat">
             </picture>
 
-            <picture hidden>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+            <picture hidden="">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
               <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
@@ -155,71 +152,10 @@
       </div>
     </div>
 
-    <div class="contacts">
-      <div class="contacts__address dealers">
-        <h3 class="dealers__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-        <address class="dealers__address">ул. Большая Конюшенная, д.&nbsp;19/8
-          <span class="dealers__city">
-            Санкт-Петербург
-          </span>
-        </address>
-      </div>
-      <div class="contacts__map">
-        <div class="google-map" title="Интерактивная карта Санкт-Петербурга с отметкой на ул. Большая Конюшенная, д.19/8"></div>
-      </div>
-    </div>
+    <include src="source/parts/contacts.html"></include>
+    <include src="source/parts/footer.html"></include>
 
-    <footer class="site-footer">
-      <div class="site-footer__wrapper">
-        <div class="site-footer__logobox">
-          <div class="logotype">
-            <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
-          </div>
-        </div>
-        <div class="site-footer__social">
-          <ul class="socials">
-            <li class="socials__item">
-              <a href="#" class="social-button social-button--vk">
-                <svg width="24" height="18" role="presentation">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
-                </svg>
-                <span class="visually-hidden">Мы ВКонтакте</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="social-button social-button--instagram">
-                <svg width="16" height="17" role="presentation">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Instagram</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="social-button social-button--fb">
-                <svg width="18" height="18" role="presentation">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Facebook</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="site-footer__academy">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-logo">
-            HTML Academy
-            <svg class="academy-logo__image" width="41" height="48" title="Логотип HTML Academy">
-              <use xlink:href="img/sprite.svg#icon-academy"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </footer>
-
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/svgxuse.min.js" defer></script>
-    <script src="js/menu.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrDfKn6wdTUS7pEEQ3rG45knCJMxqrOog&callback=initMap" async defer></script>
-    <script src="js/maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrDfKn6wdTUS7pEEQ3rG45knCJMxqrOog&callback=initMap" async="" defer=""></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
