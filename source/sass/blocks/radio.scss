@@ -8,7 +8,7 @@ $input-color: $accentColor;
   padding: 7px 0;
 }
 
-.radio .jlabel {
+.radio .customlabel {
   position: relative;
 
   display: flex;
@@ -88,11 +88,11 @@ $input-color: $accentColor;
   cursor: pointer;
   opacity: 0;
 
-  &:focus + .jlabel::before {
+  &:focus + .customlabel::before {
     box-shadow: 0 0 2px $accentColor;
   }
 
-  &:checked + .jlabel::after {
+  &:checked + .customlabel::after {
     content: "";
   }
 
@@ -100,7 +100,7 @@ $input-color: $accentColor;
     cursor: not-allowed;
   }
 
-  &:disabled + .jlabel {
+  &:disabled + .customlabel {
     opacity: 0.65;
 
     &::before {
