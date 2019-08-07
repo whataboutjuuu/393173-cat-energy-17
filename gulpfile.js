@@ -60,7 +60,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("scripts", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src(["source/js/*.js", "!source/js/maps.js"])
     .pipe(concat("scripts.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js/"));
@@ -69,7 +69,8 @@ gulp.task("scripts", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**"
+    "source/img/**",
+    "source/js/maps.js"
     ], {
       base: "source"
     })
