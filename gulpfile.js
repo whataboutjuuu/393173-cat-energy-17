@@ -91,6 +91,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/js/*.js", gulp.series("scripts", "refresh"));
+  gulp.watch("source/img/**/*.*", gulp.series("copy", "refresh"));
   gulp.watch("source/img/icons/*.svg", gulp.series("sprite", "refresh"));
   gulp.watch("source/**/*.html", gulp.series("html", "refresh"));
 });
