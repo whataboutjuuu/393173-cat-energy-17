@@ -30,7 +30,7 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: { lat: LAT, lng: LNG },
     icon: {
-      url: 'img/map-pin.png',
+      url: "img/map-pin.png",
       scaledSize: new google.maps.Size(scaledSizeW, scaledSizeH)
     },
     map: map

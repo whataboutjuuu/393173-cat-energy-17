@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи Каталог</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
@@ -339,67 +339,11 @@
       </div>
     </main>
 
-    <div class="contacts">
-      <div class="contacts__address dealers dealers--grey">
-        <h3 class="dealers__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-        <address class="dealers__address">ул. Большая Конюшенная, д.&nbsp;19/8 <span class="dealers__city">
-          Санкт-Петербург</span></address>
-      </div>
-      <div class="contacts__map">
-        <div class="google-map" title="Интерактивная карта Санкт-Петербурга с отметкой на ул. Большая Конюшенная, д.19/8"></div>
-      </div>
-    </div>
+    <include src="source/parts/contacts.html"></include>
+    <include src="source/parts/footer.html"></include>
 
-    <footer class="site-footer">
-      <div class="site-footer__wrapper">
-        <div class="site-footer__logobox">
-          <div class="logotype">
-            <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
-          </div>
-        </div>
-        <div class="site-footer__social">
-          <ul class="socials">
-            <li class="socials__item">
-              <a href="#" class="social-button social-button--vk">
-                <svg width="24" height="18" role="presentation">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
-                </svg>
-                <span class="visually-hidden">Мы ВКонтакте</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="social-button social-button--instagram">
-                <svg width="16" height="17" role="presentation">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Instagram</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="social-button social-button--fb">
-                <svg width="18" height="18" role="presentation">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Facebook</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="site-footer__academy">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-logo">
-            HTML Academy
-            <svg class="academy-logo__image" width="41" height="48" title="Логотип HTML Academy">
-              <use xlink:href="img/sprite.svg#icon-academy"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </footer>
-
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/svgxuse.min.js" defer></script>
-    <script src="js/menu.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrDfKn6wdTUS7pEEQ3rG45knCJMxqrOog&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrDfKn6wdTUS7pEEQ3rG45knCJMxqrOog&callback=initMap" async="" defer=""></script>
     <script src="js/maps.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>

@@ -19,9 +19,17 @@
 
   @media (min-width: $desktop) {
     flex-basis: 50%;
-    margin-top: -220px;
-    padding: 0;
-    overflow-x: hidden;
+    padding: 0 0 68px;
+
+    &::before {
+      bottom: 0;
+      left: 324px;
+
+      width: 100%;
+      height: calc(100% + 33px);
+
+      background-color: #eaeaea;
+    }
   }
 }
 
@@ -37,6 +45,7 @@
   }
 
   @media (min-width: $desktop) {
+    margin-top: -220px;
     margin-right: -20px;
     margin-left: -58px;
   }
