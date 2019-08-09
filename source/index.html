@@ -121,23 +121,23 @@
           <h2 class="visually-hidden">Демонстрация изменений фигуры кота</h2>
           <div class="cat-slider__image">
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)" data-srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" data-srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" data-srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-              <source data-srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source data-srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img data-src="img/before-mobile@1x.png" data-srcset="img/before-mobile@2x.png 2x" alt="Fat Cat" class="lazyload">
+              <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
+              <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+              <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Fat Cat">
             </picture>
 
             <picture hidden="">
-              <source type="image/webp" media="(min-width: 1300px)" data-srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" data-srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" data-srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-              <source data-srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source data-srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img data-src="img/after-mobile@1x.png" data-srcset="img/after-mobile@2x.png 2x" alt="Slim Cat" class="lazyload">
+              <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
+              <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+              <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Slim Cat">
             </picture>
           </div>
           <ul class="cat-slider__controls slider-controls">
@@ -158,8 +158,7 @@
     <include src="source/parts/contacts.html"></include>
     <include src="source/parts/footer.html"></include>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrDfKn6wdTUS7pEEQ3rG45knCJMxqrOog&callback=initMap" async="" defer=""></script>
-    <script src="js/maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrDfKn6wdTUS7pEEQ3rG45knCJMxqrOog&callback=initMap" async></script>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
