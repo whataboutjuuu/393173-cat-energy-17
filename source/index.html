@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Сайт магазина корма для котов Кэт Энерджи">
     <title>HTML Academy: Кэт энерджи</title>
 
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
@@ -120,23 +121,23 @@
           <h2 class="visually-hidden">Демонстрация изменений фигуры кота</h2>
           <div class="cat-slider__image">
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" data-srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" data-srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" data-srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-              <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Fat Cat">
+              <source data-srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
+              <source data-srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+              <img data-src="img/before-mobile@1x.png" data-srcset="img/before-mobile@2x.png 2x" alt="Fat Cat" class="lazyload">
             </picture>
 
             <picture hidden="">
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" data-srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" data-srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" data-srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-              <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Slim Cat">
+              <source data-srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
+              <source data-srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+              <img data-src="img/after-mobile@1x.png" data-srcset="img/after-mobile@2x.png 2x" alt="Slim Cat" class="lazyload">
             </picture>
           </div>
           <ul class="cat-slider__controls slider-controls">
