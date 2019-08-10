@@ -15,6 +15,7 @@ var include = require("posthtml-include");
 var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
 var del = require("del");
+var htmlmin = require('gulp-htmlmin');
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -56,11 +57,12 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include({ encoding: "utf8" })
     ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
 gulp.task("scripts", function () {
-  return gulp.src(["source/js/*.js", "!source/js/maps.js"])
+  return gulp.src(["source/js/*.js"])
     .pipe(concat("scripts.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js/"));
@@ -69,8 +71,7 @@ gulp.task("scripts", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/maps.js"
+    "source/img/**"
     ], {
       base: "source"
     })
