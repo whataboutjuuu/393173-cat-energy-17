@@ -89,11 +89,19 @@ $input-color: $accentColor;
   opacity: 0;
 
   &:focus + .customlabel::before {
-    box-shadow: 0 0 2px $accentColor;
+    box-shadow: 0 0 4px $accentColor;
+  }
+
+  &:active + .customlabel {
+    opacity: 0.3;
   }
 
   &:checked + .customlabel::after {
     content: "";
+  }
+
+  &:checked + .customlabel {
+    color: $fontColor;
   }
 
   &:disabled {

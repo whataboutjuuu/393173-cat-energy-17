@@ -95,9 +95,16 @@ $input-color: $accentColor;
     box-shadow: 0 0 2px $accentColor;
   }
 
+  &:active + .customlabel {
+    opacity: 0.3;
+  }
+
   &:checked + .customlabel::after {
     content: "";
+
+    color: $fontColor;
   }
+
 
   &:disabled {
     cursor: not-allowed;
