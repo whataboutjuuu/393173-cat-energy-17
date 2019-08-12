@@ -49,7 +49,7 @@ gulp.task("sprite", function () {
       inlineSvg:true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img/"));
 });
 
 gulp.task("html", function () {
@@ -103,5 +103,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean","copy", "html", "css", "scripts", "imagemin", "sprite"));
+gulp.task("build", gulp.series("clean", "copy", "sprite", "html", "css", "scripts", "imagemin" ));
 gulp.task("start", gulp.series("build", "server"));

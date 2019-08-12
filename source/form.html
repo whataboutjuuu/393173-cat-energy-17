@@ -13,6 +13,9 @@
   </head>
 
   <body>
+    <div style="display: none;">
+      <include src="source/img/sprite.svg"></include>
+    </div>
     <header class="site-header">
       <div class="site-header__logobox">
         <a href="index.html" class="logotype" title="Перейти на главную страницу">
@@ -105,7 +108,7 @@
               <label class="form__label" for="mail">E-mail:*
                 <input class="form__input form__input--mail" type="email" id="mail" name="mail" placeholder="kuklachev@gmail.com" required="">
                 <svg class="form__input-icon" width="41" height="41" role="presentation">
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  <use xlink:href="#icon-mail"></use>
                 </svg>
               </label>
             </fieldset>
@@ -113,7 +116,7 @@
               <label class="form__label" for="phone">Телефон:*
                 <input class="form__input form__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required="">
                 <svg class="form__input-icon" width="41" height="41" role="presentation">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  <use xlink:href="#icon-phone"></use>
                 </svg>
               </label>
             </fieldset>
